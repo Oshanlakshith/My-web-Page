@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13a33cf6-037e-41b8-848e-adde1e2fc5c7" name="Default Changelist" comment="Images Add">
-      <change afterPath="$PROJECT_DIR$/assets/css/image/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/image/one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/image/three.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/image/two.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/1428490.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/SDLC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Which-Is-the-Best-Software-Engineering-or-Computer-Information-Technology.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/image/one.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/image/three.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/image/two.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641621069356</updated>
       <workItem from="1641621071411" duration="14538000" />
-      <workItem from="1641697691590" duration="2513000" />
+      <workItem from="1641697691590" duration="5706000" />
     </task>
     <task id="LOCAL-00001" summary="Header Create">
       <created>1641660817457</created>

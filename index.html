@@ -13,6 +13,7 @@
         height: 70px;
         box-shadow: -2px 6px 9px -4px #0e0707;
         z-index: 188;
+        background-color: #5e8484;
     }
 
     header > ul {
@@ -27,6 +28,7 @@
     header > ul > li {
         padding: 0 10px 0 10px;
         display: inline-block;
+        color: white;
     }
 
     main > section {
@@ -37,34 +39,65 @@
     }
 
     main > section > section {
-        width: 300%;
+        width: 400%;
         height: 100%;
         border: 2px solid green;
         display: flex;
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes slide {
+        0%, 15% {
+            transform: translateX(0);
+        }
+        25%, 40% {
+            transform: translateX(-25%);
+        }
+        50%, 70% {
+            transform: translateX(-50%);
+        }
+        80%, 100% {
+            transform: translateX(-75%);
+        }
+
     }
 
     .images > div {
-      border: 1px solid green;
+        border: 1px solid green;
         width: 100%;
     }
-    .images>div:nth-child(1){
+
+    .images > div:nth-child(1) {
         background: url("assets/css/image/img.png");
         background-size: cover;
         background-position: center;
         z-index: 2;
     }
-    .images>div:nth-child(2){
-        background: url("assets/css/image/one.jpg");
+
+    .images > div:nth-child(2) {
+        background: url("assets/css/image/1428490.jpg");
         background-size: cover;
         background-position: center;
         z-index: 2;
     }
-    .images>div:nth-child(3){
-        background: url("assets/css/image/two.jpeg");
+
+    .images > div:nth-child(3) {
+        background: url("assets/css/image/Which-Is-the-Best-Software-Engineering-or-Computer-Information-Technology.jpg");
         background-size: cover;
         background-position: center;
         z-index: 2;
     }
+
+    .images > div:nth-child(4) {
+        background: url("assets/css/image/SDLC.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
+
 </style>
 <body>
 <header>
@@ -81,6 +114,7 @@
 <main>
     <section>
         <section class="images">
+            <div></div>
             <div></div>
             <div></div>
             <div></div>
