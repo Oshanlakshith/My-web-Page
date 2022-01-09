@@ -29,7 +29,42 @@
         display: inline-block;
     }
 
+    main > section {
+        height: 680px;
+        border: 3px solid red;
+        position: relative;
+        overflow: hidden;
+    }
 
+    main > section > section {
+        width: 300%;
+        height: 100%;
+        border: 2px solid green;
+        display: flex;
+    }
+
+    .images > div {
+      border: 1px solid green;
+        width: 100%;
+    }
+    .images>div:nth-child(1){
+        background: url("assets/css/image/img.png");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
+    .images>div:nth-child(2){
+        background: url("assets/css/image/one.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
+    .images>div:nth-child(3){
+        background: url("assets/css/image/two.jpeg");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
 </style>
 <body>
 <header>
@@ -45,13 +80,40 @@
 </header>
 <main>
     <section>
-        <section>
+        <section class="images">
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
-
     </section>
+    <section>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit
+            tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium porro
+            reprehenderit temporibus?</p>
+    </section>
+    <section>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro
+            reprehenderit temporibus?</p>
+    </section>
+    <section><p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia
+        quod
+        suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+        porro
+        reprehenderit temporibus?</p>
+    </section>
+
+    <section><p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia
+        quod
+        suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+        porro
+        reprehenderit temporibus?</p>
+    </section>
+
 </main>
 <footer>
 </footer>
-
 </body>
 </html>
