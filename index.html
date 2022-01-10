@@ -22,6 +22,7 @@
         top: 0;
         font-size: 20px;
         list-style: none;
+       font-weight: bold;
         display: inline-block;
     }
 
@@ -31,9 +32,14 @@
         color: white;
     }
 
+    body > header > ul > li:hover {
+        color: red;
+        cursor: pointer;
+    }
+
     main > section {
         height: 680px;
-        border: 3px solid red;
+        /*   border: 3px solid red;*/
         position: relative;
         overflow: hidden;
     }
@@ -98,6 +104,23 @@
         z-index: 2;
     }
 
+    .Abouts > h1 {
+        color: #ffffff;
+        right: 490px;
+        bottom: 74px;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        font-size: 60px;
+    }
+
+    #name {
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
 </style>
 <body>
 <header>
@@ -112,8 +135,11 @@
     </ul>
 </header>
 <main>
-    <section>
+    <section class="Abouts">
+        <h1>welcome</h1>
+        <h1 id="name">I am Oshan Lakshitha</h1>
         <section class="images">
+
             <div></div>
             <div></div>
             <div></div>
@@ -132,11 +158,14 @@
             porro
             reprehenderit temporibus?</p>
     </section>
-    <section><p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia
+    <section><p>
+        Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia
         quod
         suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
         porro
-        reprehenderit temporibus?</p>
+        reprehenderit temporibus? Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque
+        quae quam
+    </p>
     </section>
 
     <section><p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia
