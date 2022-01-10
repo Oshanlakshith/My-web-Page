@@ -22,7 +22,7 @@
         top: 0;
         font-size: 20px;
         list-style: none;
-       font-weight: bold;
+        font-weight: bold;
         display: inline-block;
     }
 
@@ -39,7 +39,7 @@
 
     main > section {
         height: 680px;
-        /*   border: 3px solid red;*/
+        border: 3px solid red;
         position: relative;
         overflow: hidden;
     }
@@ -104,7 +104,7 @@
         z-index: 2;
     }
 
-    .Abouts > h1 {
+    .first > h1 {
         color: #ffffff;
         right: 490px;
         bottom: 74px;
@@ -121,6 +121,32 @@
         position: absolute;
     }
 
+    .about {
+        left: 40px;
+        top: 2px;
+        position: absolute;
+        font-style: oblique;
+        margin: auto;
+        /*
+                border: 1px solid red;
+        */
+    }
+
+    .aboutSection {
+        background-color: #ffffff;
+    }
+
+    .aboutSection > p {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .footer {
+        height: 600px;
+        background-color: #000000;
+        color: white;
+    }
 </style>
 <body>
 <header>
@@ -135,7 +161,7 @@
     </ul>
 </header>
 <main>
-    <section class="Abouts">
+    <section class="first">
         <h1>welcome</h1>
         <h1 id="name">I am Oshan Lakshitha</h1>
         <section class="images">
@@ -146,10 +172,12 @@
             <div></div>
         </section>
     </section>
-    <section>
+
+    <section class="aboutSection">
+        <h1 class="about">About</h1>
         <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
-            suscipit
-            tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium porro
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro
             reprehenderit temporibus?</p>
     </section>
     <section>
@@ -174,9 +202,13 @@
         porro
         reprehenderit temporibus?</p>
     </section>
+    <section></section>
+    <section></section>
+    <section></section>
 
 </main>
-<footer>
+<footer class="footer">
+    <h1>End</h1>
 </footer>
 </body>
 </html>

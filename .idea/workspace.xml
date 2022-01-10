@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a33cf6-037e-41b8-848e-adde1e2fc5c7" name="Default Changelist" comment="slide images">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/My-web-Page.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="23P1lrBRPB2s9OIycZX2AljduMG" />
+  <component name="ProjectId" id="23UlcF14TuSQvWvP5XfdKfWv577" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,65 +23,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css/image" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work HTML\HTML web\assets\css\image" />
-      <recent name="E:\work HTML\HTML web\assets" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13a33cf6-037e-41b8-848e-adde1e2fc5c7" name="Default Changelist" comment="" />
-      <created>1641621069356</created>
+      <changelist id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="" />
+      <created>1641796625969</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1641621069356</updated>
-      <workItem from="1641621071411" duration="14538000" />
-      <workItem from="1641697691590" duration="9451000" />
-      <workItem from="1641783373441" duration="131000" />
-      <workItem from="1641783532649" duration="31000" />
-      <workItem from="1641783924853" duration="1841000" />
+      <updated>1641796625969</updated>
+      <workItem from="1641796628458" duration="3330000" />
     </task>
-    <task id="LOCAL-00001" summary="Header Create">
-      <created>1641660817457</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1641660817457</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Images Add">
-      <created>1641700204002</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1641700204002</updated>
-    </task>
-    <task id="LOCAL-00003" summary="slide images">
-      <created>1641714668835</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1641714668835</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,12 +52,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Header Create" />
-    <MESSAGE value="Images Add" />
-    <MESSAGE value="slide images" />
-    <option name="LAST_COMMIT_MESSAGE" value="slide images" />
   </component>
 </project>
