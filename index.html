@@ -39,7 +39,7 @@
 
     main > section {
         height: 680px;
-        border: 3px solid red;
+        /*   border: 3px solid red;*/
         position: relative;
         overflow: hidden;
     }
@@ -124,7 +124,7 @@
     .about {
         left: 40px;
         top: 2px;
-        position: absolute;
+        position: relative;
         font-style: oblique;
         margin: auto;
         /*
@@ -134,6 +134,7 @@
 
     .aboutSection {
         background-color: #ffffff;
+
     }
 
     .aboutSection > p {
@@ -229,7 +230,8 @@
         font-size: 25px;
         position: relative;
     }
-    #email{
+
+    #email {
         color: red;
         top: -256px;
         width: 200px;
@@ -238,16 +240,102 @@
         position: relative;
         font-size: 17px;
     }
-    #email>h2{
+
+    #email > h2 {
         display: inline-block;
     }
-    #email>h3{
-        color:white;
+
+    #email > h3 {
+        color: white;
         top: 1px;
         left: -70px;
         position: relative;
         margin: auto;
 
+    }
+
+    #contactUs {
+        width: 60px;
+        height: 60px;
+        background: #ff0505;
+        position: fixed;
+        right: 80px;
+        bottom: 40px;
+        border-radius: 100%;
+        z-index: 1;
+    }
+
+    #contactUs > div {
+        font-size: 33px;
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    #facebook {
+        width: 40px;
+        height: 40px;
+        background: #ff0000;
+        position: relative;
+        right: -1145px;
+        top: -251px;
+        bottom: 40px;
+        border-radius: 100%;
+        z-index: 2;
+    }
+
+    #facebook > div {
+        font-size: 23px;
+        color: white;
+        position: absolute;
+        top: 9px;
+        left: 14px;
+    }
+    #facebook:hover{
+        background-color: blue;
+    }
+    #youtube {
+        width: 40px;
+        height: 40px;
+        background: #ef0000;
+        position: relative;
+        right: -1204px;
+
+        top: -292px;
+        bottom: 40px;
+        border-radius: 100%;
+        z-index: 2;
+    }
+
+    #youtube > div {
+        font-size: 23px;
+        color: #ffffff;
+        position: absolute;
+        top: 9px;
+        left: 8px;
+    }
+    #linkdIn {
+        width: 40px;
+        height: 40px;
+        background: #ff0404;
+        position: relative;
+        right: -1262px;
+        top: -331px;
+        bottom: 40px;
+        border-radius: 100%;
+        z-index: 2;
+    }
+
+    #linkdIn > div {
+        font-size: 23px;
+        color: white;
+        position: absolute;
+        top: 9px;
+        left: 8px;
+    }
+    #linkdIn:hover{
+        background-color: #0019ff;
     }
 </style>
 <body>
@@ -263,6 +351,11 @@
     </ul>
 </header>
 <main>
+    <div id="contactUs">
+        <div>
+            <i class="fas fa-phone-alt"></i>
+        </div>
+    </div>
     <section class="first">
         <h1>welcome</h1>
         <h1 id="name">I am Oshan Lakshitha</h1>
@@ -358,6 +451,22 @@
         <h2>Email</h2>
         <h3>Oshanlakshitha146@gmail.com</h3>
         <h3>Oshanlakshitha634@gmail.com</h3>
+    </div>
+
+    <div id="facebook">
+        <div>
+            <i class="fab fa-facebook-f"></i>
+        </div>
+    </div>
+    <div id="youtube">
+        <div>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+    <div id="linkdIn">
+        <div>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
     </div>
 </footer>
 </body>
