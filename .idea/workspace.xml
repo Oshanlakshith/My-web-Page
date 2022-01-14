@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="social meadia">
-      <change afterPath="$PROJECT_DIR$/assets/css/image/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/image/three.jpg" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="css image update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -34,19 +32,6 @@
       <recent name="E:\work HTML\My project\My-web-Page\assets\css" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +43,9 @@
       <workItem from="1641796628458" duration="8776000" />
       <workItem from="1641828878925" duration="4512000" />
       <workItem from="1641876885293" duration="8478000" />
-      <workItem from="1641908666807" duration="2099000" />
+      <workItem from="1641908666807" duration="3902000" />
+      <workItem from="1641953387816" duration="2206000" />
+      <workItem from="1642132644177" duration="8305000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -81,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641889317267</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="css image update">
+      <created>1641911428155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641911428155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +97,7 @@
     <MESSAGE value="footer" />
     <MESSAGE value="footer complete" />
     <MESSAGE value="social meadia" />
-    <option name="LAST_COMMIT_MESSAGE" value="social meadia" />
+    <MESSAGE value="css image update" />
+    <option name="LAST_COMMIT_MESSAGE" value="css image update" />
   </component>
 </project>
