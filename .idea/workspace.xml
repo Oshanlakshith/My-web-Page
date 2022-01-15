@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="skils div add">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="skills div complete">
+      <change afterPath="$PROJECT_DIR$/assets/css/image/javafx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/mysql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/png-clipart-mysql-database-graphics-microsoft-access-logo-blue-web-design-thumbnail.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -32,6 +35,19 @@
       <recent name="E:\work HTML\My project\My-web-Page\assets\css" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +62,7 @@
       <workItem from="1641908666807" duration="3902000" />
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
-      <workItem from="1642215410314" duration="3405000" />
+      <workItem from="1642215410314" duration="11397000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -97,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642188739591</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="skills div complete">
+      <created>1642219118065</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642219118065</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +146,7 @@
     <MESSAGE value="contactUs to add ContactNo" />
     <MESSAGE value="About" />
     <MESSAGE value="skils div add" />
-    <option name="LAST_COMMIT_MESSAGE" value="skils div add" />
+    <MESSAGE value="skills div complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="skills div complete" />
   </component>
 </project>
