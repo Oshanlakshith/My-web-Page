@@ -8,7 +8,17 @@
 <style>
     main > section {
         position: relative;
-        border: 1px solid red;
+
+
+    }
+
+    #projectDiv {
+        background-color: #0e4057;
+        color: white;
+    }
+
+    #AssignmentDiv {
+        background-color: #96A1A7FF;
     }
 
     .project {
@@ -19,16 +29,23 @@
         position: relative;
         display: inline-block;
         left: 10px;
-
+        transition: 1s;
     }
 
-    #AllProjects {
-        margin: auto;
-        position: relative;
+    .project:hover {
+        transform: scale(1.2);
+        background-color: #062d36;
     }
-
+    .project:hover>h1{
+        color: red;
+    }
     #AllProjects > div:nth-child(1) {
         top: 0;
+        left: 5px;
+    }
+
+    #AllProjects > div:nth-child(1):hover {
+
     }
 
     #AllProjects > div:nth-child(2) {
@@ -46,10 +63,10 @@
         width: 100%;
         height: 250px;
         bottom: 0;
-        position: absolute;
+        position: relative;
         background-position: center;
         background-size: cover;
-        display: inline-block;
+
     }
 
     .Pimages > img {
@@ -57,26 +74,32 @@
         height: 100%;
     }
 
+    .project > h1 {
+        text-align: center;
+        color: #ffffff;
+    }
 </style>
 <body>
 <main>
     <section id="projectDiv">
         <h1>Projects</h1>
-
-
         <div id="AllProjects">
+
             <div class="project">
+                <h1>Hotel System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/Hotel.png">
                 </div>
-
             </div>
+
             <div class="project">
+                <h1>Thogakade System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/thogakaded.PNG">
                 </div>
             </div>
             <div class="project">
+                <h1>Parking System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/parking.PNG">
                 </div>
@@ -84,7 +107,7 @@
         </div>
 
     </section>
-    <section>
+    <section id="AssignmentDiv">
         <h1>Assignment</h1>
     </section>
 </main>
