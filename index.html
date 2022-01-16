@@ -314,9 +314,11 @@
         top: 40px;
         position: relative;
     }
-    .image:hover{
+
+    .image:hover {
         color: red;
     }
+
     #addressHome {
         top: 5px;
         left: -561px;
@@ -470,6 +472,31 @@
         background-color: #0019ff;
     }
 
+    .projects > div {
+        width: calc(95% / 3);
+        height: calc(900px / 2);
+        box-shadow: 35px 13px 8px -5px #282626;
+        background-color: #3f476f;
+        position: absolute;
+        justify-content: center;
+    }
+
+    .projects > div:nth-child(1) {
+        left: 5px;
+        margin: auto;
+    }
+
+    .projects > div:nth-child(2) {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .projects > div:nth-child(3) {
+        right: 5px;
+        margin: auto;
+    }
+
 </style>
 <body>
 <header>
@@ -571,6 +598,11 @@
     </section>
     <section class="projects">
         <h1>Projects</h1>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
     </section>
     <section class="service">
         <h1>service</h1>
