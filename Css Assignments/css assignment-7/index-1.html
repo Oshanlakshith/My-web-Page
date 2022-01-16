@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    section {
+        margin-top: 100px;
+        marging-left: 100px;
+        position: absolute;
+        animation-duration: 5s;
+        animation-name: one;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        background-position: center;
+        background-size: cover;
+        width: 259px;
+        height: 179px;
+        background-color: orange;
+        border-radius: 30%;
+    }
+
+    @keyframes one {
+        0% {
+            left: 0;
+            top: 0;
+            background-color: red;
+            transform: rotate(0deg);
+        }
+        25%{
+            left: 600px;
+            top: 0;
+            background-color: violet;
+            transform: rotate(90deg);
+
+        }
+        50%{
+            left: 600px;
+            top: 400px;
+            background-color: midnightblue;
+            transform: rotate(180deg);
+        }
+        75%{
+            left: 0;
+            top: 400px;
+            background-color: aqua;
+            transform: rotate(270deg);
+        }
+        100%{
+            left: 0;
+            top: 0;
+            background-color: chartreuse;
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+<section>
+
+</section>
+</body>
+</html>

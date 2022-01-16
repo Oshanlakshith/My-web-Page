@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section {
+            width: 1px;
+            height: 1px;
+            border: 10px solid red;
+            border-radius: 100%;
+            pointer-events: none;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            animation-iteration-count: infinite;
+            animation-name: water;
+            animation-duration: 2s;
+        }
+
+        @keyframes water {
+            0% {
+                width: 1px;
+                height: 1px;
+                opacity: 0.5;
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-color: #2e3136;
+    }
+
+    main {
+        width: 700px;
+        height: 400px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        overflow: hidden;
+        border: 5px solid rgba(227, 114, 114, 0.84);
+    }
+
+    main > section {
+        width: 400%;
+        height: 100%;
+        display: flex;
+        animation-name: slideme;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    main > section > div {
+        width: 100%;
+    }
+
+    section > div:nth-child(1) {
+        background: url("assets/image/img.png");
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+    }
+    section > div:nth-child(2) {
+        background: url("assets/image/2022-land-rover-range-rover.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    section > div:nth-child(3) {
+        background: url("assets/image/toyota-Land-Cruiser-v8-2015-exterior-tme-004-a-full_tcm-11-502764.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    section > div:nth-child(4) {
+        background: url("assets/image/20210106045452_2021_Audi_A4_facelift_WM.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    body > section >h1{
+        position: absolute;
+        top: 6px;
+        width: 100%;
+        height: max-content;
+        text-align: center;
+        color: white;
+        font-family: Ubuntu;
+        font-width: bold;
+        font-size: 64px;
+    }
+
+    @keyframes slideme {
+        0%, 15% {
+            transform: translateX(0);
+        }
+        25%, 40% {
+            transform: translateX(-25%);
+        }
+        50%, 70% {
+            transform: translateX(-50%);
+        }
+        80%, 100% {
+            transform: translateX(-75%);
+        }
+    }
+</style>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+<section>
+    <h1>My Dreams</h1>
+</section>
+</body>
+</html>

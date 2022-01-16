@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    section {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        border-radius: 100%;
+    }
+
+    section > div > h2 {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 3;
+        width: max-content;
+        height: max-content;
+    }
+
+    section::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 20px solid #77859d;
+        border-top: 20px solid #ff025f;
+        border-radius: 100%;
+        transition: all 2s;
+    }
+
+    section:hover::after {
+        transform: rotate(360deg);
+        transition: all 2s;
+        cursor: pointer;
+    }
+</style>
+<body>
+<section>
+    <div><h2>RWAD</h2></div>
+</section>
+</body>
+</html>
