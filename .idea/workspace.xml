@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Skills section complete">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="css assignment add 1,2,3,4,5,7,8,9,10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +27,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\css\image" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\css" />
     </key>
@@ -58,7 +59,7 @@
       <workItem from="1641908666807" duration="3902000" />
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
-      <workItem from="1642215410314" duration="11806000" />
+      <workItem from="1642215410314" duration="12736000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642230054832</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="css assignment add 1,2,3,4,5,7,8,9,10">
+      <created>1642304061947</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642304061947</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +159,7 @@
     <MESSAGE value="skils div add" />
     <MESSAGE value="skills div complete" />
     <MESSAGE value="Skills section complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Skills section complete" />
+    <MESSAGE value="css assignment add 1,2,3,4,5,7,8,9,10" />
+    <option name="LAST_COMMIT_MESSAGE" value="css assignment add 1,2,3,4,5,7,8,9,10" />
   </component>
 </project>
