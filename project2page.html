@@ -13,50 +13,97 @@
 
     .project {
         width: calc(95% / 3);
-        height: calc(440px / 2);
+        height: calc(700px / 2);
         box-shadow: 35px 13px 8px -5px #282626;
         background-color: #3f476f;
         position: relative;
         display: inline-block;
-        left:10px
+        left: 10px;
 
     }
 
     #AllProjects {
         margin: auto;
-        left: 10px;
         position: relative;
     }
 
     #AllProjects > div:nth-child(1) {
-
+        top: 0;
     }
 
     #AllProjects > div:nth-child(2) {
         top: 0;
         left: 32px;
-        margin: auto;
     }
 
     #AllProjects > div:nth-child(3) {
         top: 0;
         left: 45px;
+
+    }
+
+    .Pimages {
+        width: 100%;
+        height: 250px;
+        bottom: 0;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
+
+    .Pimages > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ProjectButton2 {
+        width: 110px;
+        height: 40px;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: relative;
         margin: auto;
+        z-index: 1;
+    }
+    #ProjectButton2>h3{
+        text-align: center;
+        color: white;
+        top: 13px;
+        position: relative;
+    }
+    #ProjectButton2:hover{
+        cursor: pointer;
+        background-color: red;
     }
 </style>
 <body>
 <main>
     <section id="projectDiv">
         <h1>Projects</h1>
+
+
         <div id="AllProjects">
             <div class="project">
+                <div class="Pimages">
+                    <img src="assets/css/image/Hotel.png">
+                </div>
 
             </div>
             <div class="project">
-
+                <div class="Pimages">
+                    <img src="assets/css/image/thogakaded.PNG">
+                </div>
             </div>
             <div class="project">
-
+                <div class="Pimages">
+                    <img src="assets/css/image/parking.PNG">
+                </div>
+            </div>
+            <div id="ProjectButton2">
+                <h3>View All</h3>
             </div>
         </div>
 
