@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="project image add.hotel image">
-      <change afterPath="$PROJECT_DIR$/assets/css/image/thogakaded.PNG" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment=" project all images add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -61,7 +60,7 @@
       <workItem from="1641908666807" duration="3902000" />
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
-      <workItem from="1642215410314" duration="18984000" />
+      <workItem from="1642215410314" duration="19929000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642311956382</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=" project all images add">
+      <created>1642313122916</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642313122916</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +192,8 @@
     <MESSAGE value="header position" />
     <MESSAGE value="projects div create" />
     <MESSAGE value="project image add.hotel image" />
-    <option name="LAST_COMMIT_MESSAGE" value="project image add.hotel image" />
+    <MESSAGE value="all project images add" />
+    <MESSAGE value=" project all images add" />
+    <option name="LAST_COMMIT_MESSAGE" value=" project all images add" />
   </component>
 </project>
