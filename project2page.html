@@ -10,19 +10,59 @@
         position: relative;
         border: 1px solid red;
     }
+
+    .project {
+        width: calc(95% / 3);
+        height: calc(440px / 2);
+        box-shadow: 35px 13px 8px -5px #282626;
+        background-color: #3f476f;
+        position: relative;
+        display: inline-block;
+        left:10px
+
+    }
+
+    #AllProjects {
+        margin: auto;
+        left: 10px;
+        position: relative;
+    }
+
+    #AllProjects > div:nth-child(1) {
+
+    }
+
+    #AllProjects > div:nth-child(2) {
+        top: 0;
+        left: 32px;
+        margin: auto;
+    }
+
+    #AllProjects > div:nth-child(3) {
+        top: 0;
+        left: 45px;
+        margin: auto;
+    }
 </style>
 <body>
 <main>
-    <section>
-        <h1>
-            Projects
+    <section id="projectDiv">
+        <h1>Projects</h1>
+        <div id="AllProjects">
+            <div class="project">
 
-        </h1>
+            </div>
+            <div class="project">
+
+            </div>
+            <div class="project">
+
+            </div>
+        </div>
+
     </section>
     <section>
-        <h1>
-            Assignment
-        </h1>
+        <h1>Assignment</h1>
     </section>
 </main>
 </body>
