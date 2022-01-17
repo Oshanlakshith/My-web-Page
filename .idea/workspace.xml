@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment images add">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment images add update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
@@ -71,7 +71,7 @@
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
       <workItem from="1642215410314" duration="33597000" />
-      <workItem from="1642396057048" duration="5269000" />
+      <workItem from="1642396057048" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642398603413</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Assignment images add update">
+      <created>1642401437065</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1642401437065</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +276,7 @@
     <MESSAGE value="Assignment 10" />
     <MESSAGE value="Assignment div add" />
     <MESSAGE value="Assignment images add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment images add" />
+    <MESSAGE value="Assignment images add update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment images add update" />
   </component>
 </project>
