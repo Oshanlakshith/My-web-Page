@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment animation Complete">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="linked to project github">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/Css Assignment-3/Index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/Css Assignment-3/Index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css Assignment-2/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-2/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css Assignment-4/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-4/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css Assignment-6/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-6/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css assignment-5/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css assignment-5/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css assignment-7/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css assignment-7/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css-assignment-10/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css-assignment-10/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css-assignment-8/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css-assignment-8/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Assignments/css-assignment-9/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css-assignment-9/index-9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +80,7 @@
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
       <workItem from="1642215410314" duration="33597000" />
-      <workItem from="1642396057048" duration="14998000" />
+      <workItem from="1642396057048" duration="17663000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -248,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642404515888</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="linked to project github">
+      <created>1642439093419</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1642439093419</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +283,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="footer complete" />
     <MESSAGE value="social meadia" />
     <MESSAGE value="css image update" />
     <MESSAGE value="contactUs to add ContactNo" />
@@ -292,6 +307,7 @@
     <MESSAGE value="Assignment images add update" />
     <MESSAGE value="Assignment images add complete" />
     <MESSAGE value="Assignment animation Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment animation Complete" />
+    <MESSAGE value="linked to project github" />
+    <option name="LAST_COMMIT_MESSAGE" value="linked to project github" />
   </component>
 </project>
