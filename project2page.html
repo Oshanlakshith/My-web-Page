@@ -163,12 +163,52 @@
         left: 15px;
         top: 38px;
     }
-    .assignment:hover{
+
+    .assignment:hover {
         transform: scale(1.2);
         background-color: #062d36;
     }
-    .assignment:hover>h1{
-       color: red;
+
+    .assignment:hover > h1 {
+        color: red;
+    }
+
+    .Pimages > p {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: 5px solid red;
+        top: -275px;
+        background-color: #5e5151;
+        text-align: center;
+        font-weight: bold;
+         opacity: 0;
+    }
+    .viewProject {
+        z-index: 1;
+        height: 35px;
+        width: 90px;
+        position: relative;
+        top: 130px;
+        left: -129px;
+        border: 3px solid #ff1d49;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: black;
+    }
+
+    .viewProject:hover {
+        background-color: #3e5799;
+    }
+
+    * {
+        text-decoration: none;
+    }
+    a{
+        color: white;
+    }
+    .paregraph:hover{
+       opacity: 100%;
     }
 </style>
 <body>
@@ -181,6 +221,11 @@
                 <h1>Hotel System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/Hotel.png">
+                    <p class="paregraph">MVC Architecture Hotel System
+                        <button class="viewProject">
+                            <a href="https://github.com/Oshanlakshith/Hotel-Management-System-1st">View</a>
+                        </button>
+                    </p>
                 </div>
             </div>
 
@@ -188,12 +233,23 @@
                 <h1>Thogakade System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/thogakaded.PNG">
+                    <p class="paregraph">>MVC Architecture Thogakade System
+                        <button class="viewProject">
+                            <a href="https://github.com/Oshanlakshith/Super-Market">View</a>
+                        </button>
+                    </p>
                 </div>
             </div>
+
             <div class="project">
                 <h1>Parking System</h1>
                 <div class="Pimages">
                     <img src="assets/css/image/parking.PNG">
+                    <p class="paregraph">Parking System
+                        <button class="viewProject">
+                            <a href="https://github.com/Oshanlakshith/Parking-System">View</a>
+                        </button>
+                    </p>
                 </div>
             </div>
         </div>
