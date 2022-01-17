@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment 10">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment div add">
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 10.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 6.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 7.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/image/Assignment 9.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/image/Which-Is-the-Best-Software-Engineering-or-Computer-Information-Technology.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +52,21 @@
       <recent name="E:\work HTML\My project\My-web-Page\assets\css" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +82,7 @@
       <workItem from="1641953387816" duration="2206000" />
       <workItem from="1642132644177" duration="15938000" />
       <workItem from="1642215410314" duration="33597000" />
-      <workItem from="1642396057048" duration="750000" />
+      <workItem from="1642396057048" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -197,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642396638966</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Assignment div add">
+      <created>1642396994845</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1642396994845</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +271,7 @@
     <MESSAGE value="project 2 images and button add" />
     <MESSAGE value="buttons" />
     <MESSAGE value="Assignment 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 10" />
+    <MESSAGE value="Assignment div add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment div add" />
   </component>
 </project>
