@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update header">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <workItem from="1642132644177" duration="15938000" />
       <workItem from="1642215410314" duration="33597000" />
       <workItem from="1642396057048" duration="19902000" />
-      <workItem from="1642526524733" duration="365000" />
+      <workItem from="1642526524733" duration="2451000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642443610363</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update header">
+      <created>1642526918445</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1642526918445</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +295,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="skils div add" />
     <MESSAGE value="skills div complete" />
     <MESSAGE value="Skills section complete" />
     <MESSAGE value="css assignment add 1,2,3,4,5,7,8,9,10" />
@@ -313,6 +319,7 @@
     <MESSAGE value="Assignment to button add" />
     <MESSAGE value="Assignment button And linked github linked to add" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update header" />
+    <option name="LAST_COMMIT_MESSAGE" value="update header" />
   </component>
 </project>

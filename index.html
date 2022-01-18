@@ -155,7 +155,7 @@
     }
 
     .projects {
-        background-color: #0e4057;
+        background-color: #96a1a7;
     }
 
     .projects > h1 {
@@ -556,6 +556,30 @@
     * {
         text-decoration: none;
     }
+
+    .white-circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        top: 136px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    aside > div:nth-child(1) {
+        bottom: -285px;
+        left: 3px;
+    }
+    .white-line{
+        width: 5px;
+        height: 400px;
+        background-color: white;
+        top: 85px;
+        left: 758px;
+        position: relative;
+    }
 </style>
 <body>
 <header>
@@ -650,6 +674,11 @@
 
     <section class="Educations">
         <h1>Educations</h1>
+        <aside id="education">
+            <div class="white-circle"></div>
+            <div class="white-circle"></div>
+            <div class="white-line"></div>
+        </aside>
     </section>
 
     <section class="projects">
