@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Item</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark shadow-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse shadow-lg" id="navbarTogglerDemo01">
+            <h1 class="navbar-brand text-success fw-bold">Pos System</h1>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="mb-2">
+    <h1 class="text-light fw-bold text-center bg-danger">Item Form</h1>
+    <form>
+        <div class=" shadow-lg">
+            <label for="customerId" class="form-label fw-bold">Item Id :</label>
+            <input type="number" class="form-control" id="customerId" aria-describedby="emailHelp">
+        </div>
+        <div class="shadow-lg">
+            <label for="CustomerName" class="form-label fw-bold">Item Name :</label>
+            <input type="text" class="form-control" id="CustomerName">
+        </div>
+        <div class="shadow-lg">
+            <label for="CustomerAddress" class="form-label fw-bold">Item Price :</label>
+            <input type="text" class="form-control" id="CustomerAddress">
+        </div>
+        <div class=" mb-3 shadow-lg">
+            <label for="CustomerContact" class="form-label fw-bold">Item Quantity :</label>
+            <input type="number" class="form-control" id="CustomerContact">
+        </div>
+        <button type="submit" class="btn btn-success fw-bold">Save</button>
+        <button type="submit" class="btn btn-warning fw-bold">Update</button>
+        <button type="submit" class="btn btn-danger fw-bold">Delete</button>
+        <button type="submit" class="btn btn-info fw-bold">Search</button>
+    </form>
+</section>
+<section>
+    <table class="table table-light">
+        <thead class="bg-danger table table-striped">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Salery</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>I001</td>
+            <td>Ice</td>
+            <td>60/=</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>I002</td>
+            <td>rice</td>
+            <td>150/=</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>I003</td>
+            <td>Biscuts</td>
+            <td>60/=</td>
+            <td>50</td>
+        </tr>
+
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
