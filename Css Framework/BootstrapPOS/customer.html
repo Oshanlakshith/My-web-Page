@@ -14,7 +14,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse shadow-lg" id="navbarTogglerDemo01">
-            <h1 class="navbar-brand text-success ">Pos System</h1>
+            <h1 class="navbar-brand text-success fw-bold">Pos System</h1>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -33,28 +33,33 @@
     </div>
 </nav>
 <section class="mb-2">
+    <h1 class="text-light fw-bold text-center bg-success">Customer Form</h1>
     <form>
         <div class="mb-3 shadow-lg">
-            <label for="customerId" class="form-label">Customer Id :</label>
-            <input type="email" class="form-control" id="customerId" aria-describedby="emailHelp">
+            <label for="customerId" class="form-label fw-bold">Customer Id :</label>
+            <input type="number" class="form-control" id="customerId" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="CustomerName" class="form-label">Cutomer Name :</label>
-            <input type="password" class="form-control" id="CustomerName">
+            <label for="CustomerName" class="form-label fw-bold">Cutomer Name :</label>
+            <input type="text" class="form-control" id="CustomerName">
         </div>
         <div class="mb-3">
-            <label for="CustomerAddress" class="form-label">Customer Address :</label>
-            <input type="password" class="form-control" id="CustomerAddress">
+            <label for="CustomerAddress" class="form-label fw-bold">Customer Address :</label>
+            <input type="text" class="form-control" id="CustomerAddress">
         </div>
         <div class="mb-3">
-            <label for="CustomerSalary" class="form-label">Customer Salary :</label>
-            <input type="password" class="form-control" id="CustomerSalary">
+            <label for="CustomerContact" class="form-label fw-bold">Customer Contact :</label>
+            <input type="number" class="form-control" id="CustomerContact">
+        </div>
+        <div class="mb-3">
+            <label for="CustomerSalary" class="form-label fw-bold">Customer Salary :</label>
+            <input type="number" class="form-control" id="CustomerSalary">
         </div>
 
-        <button type="submit" class="btn btn-success">Save</button>
-        <button type="submit" class="btn btn-warning">Update</button>
-        <button type="submit" class="btn btn-danger">Delete</button>
-        <button type="submit" class="btn btn-info ">Search</button>
+        <button type="submit" class="btn btn-success fw-bold">Save</button>
+        <button type="submit" class="btn btn-warning fw-bold">Update</button>
+        <button type="submit" class="btn btn-danger fw-bold">Delete</button>
+        <button type="submit" class="btn btn-info fw-bold">Search</button>
     </form>
 </section>
 <section class="shadow-lg">
