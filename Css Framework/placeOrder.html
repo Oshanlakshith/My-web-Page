@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -33,38 +33,76 @@
     </div>
 </nav>
 <h1 class="text-light fw-bold text-center bg-danger">Place Order Form</h1>
-<section>
-    <form>
-        <fieldset class="col-3">
-            <legend class="text-center bg-success mb-3">Invoice Details</legend>
-            <div class="shadow-lg">
-                <label for="OrderId" class="form-label fw-bold">Order Id :</label>
-                <input type="text" class="form-control" id="OrderId">
+<section class="container-fluid mt-2">
+    <section class="row">
+        <div class="col-4">
+            <form>
+                <fieldset>
+                    <legend class="text-center bg-success mb-3 text-light fw-bold">Invoice Details</legend>
+                    <div class="shadow-lg">
+                        <label for="OrderId" class="form-label fw-bold">Order Id :</label>
+                        <input type="text" class="form-control" id="OrderId">
 
-                <div class="mb-3 fw-bold">
-                    <label for="disabledSelect" class="form-label">Customer :</label>
-                    <select id="disabledSelect" class="form-select">
-                    </select>
-                </div>
+                        <div class="mb-3 fw-bold">
+                            <label for="combo" class="form-label">Customer :</label>
+                            <select id="combo" class="form-select">
+                            </select>
+                        </div>
+                        <div class="shadow-lg">
+                            <label for="Name" class="form-label fw-bold"> Name :</label>
+                            <input type="text" class="form-control" id="Name">
+                        </div>
+                        <div class="shadow-lg">
+                            <label for="Address" class="form-label fw-bold">Address :</label>
+                            <input type="text" class="form-control" id="Address">
+                        </div>
+                        <div class="shadow-lg">
+                            <label for="Date" class="form-label fw-bold">Date :</label>
+                            <input type="date" class="form-control" id="Date">
+                        </div>
+                        <div class="shadow-lg">
+                            <label for="Salery" class="form-label fw-bold">Salery :</label>
+                            <input type="text" class="form-control" id="Salery">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-4">
+        <form>
+            <fieldset>
+                <legend class="text-center bg-success mb-3 text-light fw-bold">Item Select</legend>
                 <div class="shadow-lg">
-                    <label for="Name" class="form-label fw-bold"> Name :</label>
-                    <input type="text" class="form-control" id="Name">
+
+                    <div class="mb-3 fw-bold">
+                        <label for="item" class="form-label">Item :</label>
+                        <select id="item" class="form-select">
+                        </select>
+                        <label for="icode" class="form-label fw-bold">Item Code :</label>
+                        <input type="text" class="form-control" id="icode">
+                    </div>
+                    <div class="shadow-lg">
+                        <label for="IName" class="form-label fw-bold"> Item Name :</label>
+                        <input type="text" class="form-control" id="IName">
+                    </div>
+                    <div class="shadow-lg">
+                        <label for="IPrice" class="form-label fw-bold">Price :</label>
+                        <input type="text" class="form-control" id="IPrice">
+                    </div>
+                    <div class="shadow-lg">
+                        <label for="IQonHand" class="form-label fw-bold">QtyOnHand :</label>
+                        <input type="date" class="form-control" id="IQonHand">
+                    </div>
+                    <div class="shadow-lg">
+                        <label for="Qty" class="form-label fw-bold">Order Quantity :</label>
+                        <input type="text" class="form-control" id="Qty">
+                    </div>
                 </div>
-                <div class="shadow-lg">
-                    <label for="Address" class="form-label fw-bold">Address :</label>
-                    <input type="text" class="form-control" id="Address">
-                </div>
-                <div class="shadow-lg">
-                    <label for="Date" class="form-label fw-bold">Date :</label>
-                    <input type="date" class="form-control" id="Date">
-                </div>
-                <div class="shadow-lg">
-                    <label for="Salery" class="form-label fw-bold">Salery :</label>
-                    <input type="text" class="form-control" id="Salery">
-                </div>
-            </div>
-        </fieldset>
-    </form>
+                <button type="submit" class="btn btn-danger">Add Item</button>
+            </fieldset>
+        </form>
+        </div>
+    </section>
 </section>
 </body>
 </html>

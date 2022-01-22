@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place order form nav bar create">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place order form invoice Detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Css Framework/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/placeOrder.html" afterDir="false" />
     </list>
@@ -76,7 +76,7 @@
       <workItem from="1642396057048" duration="19902000" />
       <workItem from="1642526524733" duration="9619000" />
       <workItem from="1642739294918" duration="16527000" />
-      <workItem from="1642823002995" duration="1793000" />
+      <workItem from="1642823002995" duration="4641000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -386,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642823767068</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Place order form invoice Detail">
+      <created>1642824942870</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1642824942870</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +412,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="buttons" />
     <MESSAGE value="Assignment 10" />
     <MESSAGE value="Assignment div add" />
     <MESSAGE value="Assignment images add" />
@@ -430,6 +436,7 @@
     <MESSAGE value="Item Form Complete" />
     <MESSAGE value="Place order form" />
     <MESSAGE value="Place order form nav bar create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Place order form nav bar create" />
+    <MESSAGE value="Place order form invoice Detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Place order form invoice Detail" />
   </component>
 </project>
