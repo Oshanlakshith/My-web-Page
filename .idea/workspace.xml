@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Item Form Complete">
-      <change afterPath="$PROJECT_DIR$/Css Framework/placeOrder.html" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place order form nav bar create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/placeOrder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <workItem from="1642396057048" duration="19902000" />
       <workItem from="1642526524733" duration="9619000" />
       <workItem from="1642739294918" duration="16527000" />
-      <workItem from="1642823002995" duration="525000" />
+      <workItem from="1642823002995" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -374,7 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642760605383</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Place order form">
+      <created>1642823546856</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1642823546856</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Place order form nav bar create">
+      <created>1642823767068</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1642823767068</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,8 +405,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="projrct2 page div complete" />
-    <MESSAGE value="project 2 images and button add" />
     <MESSAGE value="buttons" />
     <MESSAGE value="Assignment 10" />
     <MESSAGE value="Assignment div add" />
@@ -418,6 +428,8 @@
     <MESSAGE value="customer form complete" />
     <MESSAGE value="customer form update text box" />
     <MESSAGE value="Item Form Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Item Form Complete" />
+    <MESSAGE value="Place order form" />
+    <MESSAGE value="Place order form nav bar create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Place order form nav bar create" />
   </component>
 </project>
