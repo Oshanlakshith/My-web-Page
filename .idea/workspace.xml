@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="final form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
     </list>
@@ -67,7 +67,7 @@
       <workItem from="1642739294918" duration="16527000" />
       <workItem from="1642823002995" duration="6331000" />
       <workItem from="1642991535841" duration="938000" />
-      <workItem from="1643174561576" duration="1798000" />
+      <workItem from="1643174561576" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -398,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642828262273</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="final form">
+      <created>1643177811570</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1643177811570</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +424,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assignment div add" />
     <MESSAGE value="Assignment images add" />
     <MESSAGE value="Assignment images add update" />
     <MESSAGE value="Assignment images add complete" />
@@ -442,6 +448,7 @@
     <MESSAGE value="Place order form invoice Detail" />
     <MESSAGE value="Place order form=invoice and item select form create" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="final form" />
+    <option name="LAST_COMMIT_MESSAGE" value="final form" />
   </component>
 </project>
