@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="final form">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Home Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,14 +81,7 @@
       <workItem from="1642739294918" duration="16527000" />
       <workItem from="1642823002995" duration="6331000" />
       <workItem from="1642991535841" duration="938000" />
-      <workItem from="1643174561576" duration="3104000" />
-    </task>
-    <task id="LOCAL-00001" summary="footer">
-      <created>1641823582818</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1641823582818</updated>
+      <workItem from="1643174561576" duration="4006000" />
     </task>
     <task id="LOCAL-00002" summary="footer complete">
       <created>1641838262785</created>
@@ -418,7 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643177811570</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Place order form Table add">
+      <created>1643184243069</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1643184243069</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Home Page">
+      <created>1643184362490</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1643184362490</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,8 +445,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assignment images add" />
-    <MESSAGE value="Assignment images add update" />
     <MESSAGE value="Assignment images add complete" />
     <MESSAGE value="Assignment animation Complete" />
     <MESSAGE value="linked to project github" />
@@ -462,6 +468,8 @@
     <MESSAGE value="Place order form=invoice and item select form create" />
     <MESSAGE value="update" />
     <MESSAGE value="final form" />
-    <option name="LAST_COMMIT_MESSAGE" value="final form" />
+    <MESSAGE value="Place order form Table add" />
+    <MESSAGE value="Home Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Page" />
   </component>
 </project>
