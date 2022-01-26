@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place order form=invoice and item select form create" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,30 +33,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Css Framework/BootstrapPOS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\css\image" />
       <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\css" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +65,9 @@
       <workItem from="1642396057048" duration="19902000" />
       <workItem from="1642526524733" duration="9619000" />
       <workItem from="1642739294918" duration="16527000" />
-      <workItem from="1642823002995" duration="4971000" />
+      <workItem from="1642823002995" duration="6331000" />
+      <workItem from="1642991535841" duration="938000" />
+      <workItem from="1643174561576" duration="1798000" />
     </task>
     <task id="LOCAL-00001" summary="footer">
       <created>1641823582818</created>
@@ -397,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642827939977</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update">
+      <created>1642828262273</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1642828262273</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +426,6 @@
     <MESSAGE value="Paregraph set" />
     <MESSAGE value="Assignment to button add" />
     <MESSAGE value="Assignment button And linked github linked to add" />
-    <MESSAGE value="update" />
     <MESSAGE value="update header" />
     <MESSAGE value="Education white line Create" />
     <MESSAGE value="Education red circle,red line,white circle,white line create complete" />
@@ -441,6 +441,7 @@
     <MESSAGE value="Place order form nav bar create" />
     <MESSAGE value="Place order form invoice Detail" />
     <MESSAGE value="Place order form=invoice and item select form create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Place order form=invoice and item select form create" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
