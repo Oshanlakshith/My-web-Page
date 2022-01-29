@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="home page image set">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment.SPA">
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/BootstrapPOS/HomePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/BootstrapPOS/customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/BootstrapPOS/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/BootstrapPOS/placeOrder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,15 +36,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment.SPA" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\bootstrap" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\css\image" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
-      <recent name="E:\work HTML\My project\My-web-Page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
@@ -82,13 +86,7 @@
       <workItem from="1642991535841" duration="938000" />
       <workItem from="1643174561576" duration="9520000" />
       <workItem from="1643336828149" duration="758000" />
-    </task>
-    <task id="LOCAL-00004" summary="css image update">
-      <created>1641911428155</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1641911428155</updated>
+      <workItem from="1643439754094" duration="706000" />
     </task>
     <task id="LOCAL-00005" summary="contactUs to add ContactNo">
       <created>1642141293352</created>
@@ -426,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643190500806</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Assignment.SPA">
+      <created>1643440026187</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1643440026187</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +450,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="linked to project github" />
     <MESSAGE value="Paregraph set" />
     <MESSAGE value="Assignment to button add" />
     <MESSAGE value="Assignment button And linked github linked to add" />
@@ -470,6 +474,7 @@
     <MESSAGE value="Home Page" />
     <MESSAGE value="Home page nav bar" />
     <MESSAGE value="home page image set" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page image set" />
+    <MESSAGE value="Assignment.SPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment.SPA" />
   </component>
 </project>
