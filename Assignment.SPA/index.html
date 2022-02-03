@@ -102,27 +102,27 @@
         <h1 class="text-light fw-bold text-center bg-success">Customer Form</h1>
         <form>
             <div class=" shadow-lg">
-                <label for="customerId" class="form-label fw-bold">Customer Id :</label>
-                <input type="number" class="form-control" id="customerId" aria-describedby="emailHelp">
+                <label for="txtCustomerId" class="form-label fw-bold">Customer Id :</label>
+                <input type="number" class="form-control" id="txtCustomerId" aria-describedby="emailHelp">
             </div>
             <div class="shadow-lg">
-                <label for="CustomerName" class="form-label fw-bold">Cutomer Name :</label>
-                <input type="text" class="form-control" id="CustomerName">
+                <label for="txtCustomerName" class="form-label fw-bold">Cutomer Name :</label>
+                <input type="text" class="form-control" id="txtCustomerName">
             </div>
             <div class="shadow-lg">
-                <label for="CustomerAddress" class="form-label fw-bold">Customer Address :</label>
-                <input type="text" class="form-control" id="CustomerAddress">
+                <label for="txtCustomerAddress" class="form-label fw-bold">Customer Address :</label>
+                <input type="text" class="form-control" id="txtCustomerAddress">
             </div>
             <div class="shadow-lg">
-                <label for="CustomerContact" class="form-label fw-bold">Customer Contact :</label>
-                <input type="number" class="form-control" id="CustomerContact">
+                <label for="txtCustomerContact" class="form-label fw-bold">Customer Contact :</label>
+                <input type="number" class="form-control" id="txtCustomerContact">
             </div>
             <div class="mb-3 shadow-lg">
-                <label for="CustomerSalary" class="form-label fw-bold">Customer Salary :</label>
-                <input type="number" class="form-control" id="CustomerSalary">
+                <label for="txtCustomerSalary" class="form-label fw-bold">Customer Salary :</label>
+                <input type="number" class="form-control" id="txtCustomerSalary">
             </div>
 
-            <button type="submit" class="btn btn-success fw-bold">Save</button>
+            <button type="submit" class="btn btn-success fw-bold" id="btnCustomerSave">Save</button>
             <button type="submit" class="btn btn-warning fw-bold">Update</button>
             <button type="submit" class="btn btn-danger fw-bold">Delete</button>
             <button type="submit" class="btn btn-info fw-bold">Search</button>
@@ -132,7 +132,6 @@
         <table class="table table-light">
             <thead class="bg-success table table-striped text-white">
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Address</th>
@@ -140,31 +139,7 @@
                 <th scope="col">Salery</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>0001</td>
-                <td>Oshan</td>
-                <td>Govinna</td>
-                <td>0763572516</td>
-                <td>75000/=</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>0002</td>
-                <td>Sadun</td>
-                <td>Horana</td>
-                <td>0783572516</td>
-                <td>45000/=</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>0003</td>
-                <td>Kamal</td>
-                <td>Colombo</td>
-                <td>0781368069</td>
-                <td>55000/=</td>
-            </tr>
+            <tbody id="customerTable">
 
             </tbody>
         </table>
@@ -255,9 +230,20 @@
         let itemQty = $("#txtitemQty").val();
         let itemPrice = $("#txtitemPrice").val();
 
-        /*create a html row*/
         let row = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
         $("#itemTable").append(row);
+    });
+
+    $("#btnCustomerSave").click(function () {
+        let customerId = $("#txtCustomerId").val();
+        let customerName = $("#txtCustomerName").val();
+        let customerAddress = $("#txtCustomerAddress").val();
+        let customerContact = $("#txtCustomerContact").val();
+        let customerSalary = $("#txtCustomerSalary").val();
+
+
+        let row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerContact}</td><td>${customerSalary}</td></tr>`;
+        $("#customerTable").append(row);
     });
 
 </script>
