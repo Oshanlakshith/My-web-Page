@@ -89,8 +89,8 @@
                 </button>
             </div>
         </div>
-                </div>
-            </div>
+        </div>
+        </div>
         </div>
     </section>
 </section>
@@ -178,23 +178,23 @@
         <h1 class="text-light fw-bold text-center bg-danger">Item Form</h1>
         <form>
             <div class=" shadow-lg">
-                <label for="customerId" class="form-label fw-bold">Item code :</label>
-                <input type="number" class="form-control" id="itemCode" aria-describedby="emailHelp">
+                <label for="txtitemId" class="form-label fw-bold">Item code :</label>
+                <input type="text" class="form-control" id="txtitemId">
             </div>
             <div class="shadow-lg">
-                <label for="CustomerName" class="form-label fw-bold">Item Name :</label>
-                <input type="text" class="form-control" id="itemName">
+                <label for="txtitemname" class="form-label fw-bold">Item Name :</label>
+                <input type="text" class="form-control" id="txtitemname">
             </div>
             <div class="shadow-lg">
-                <label for="CustomerAddress" class="form-label fw-bold">Customer Address :</label>
-                <input type="text" class="form-control" id="itemQty">
+                <label for="txtitemQty" class="form-label fw-bold">Item Qty :</label>
+                <input type="text" class="form-control" id="txtitemQty">
             </div>
             <div class="shadow-lg mb-3">
-                <label for="CustomerContact" class="form-label fw-bold">Customer Contact :</label>
-                <input type="number" class="form-control" id="itemPrice">
+                <label for="txtitemPrice" class="form-label fw-bold">Item Price :</label>
+                <input type="text" class="form-control" id="txtitemPrice">
             </div>
 
-            <button type="submit" class="btn btn-success fw-bold">Save</button>
+            <button type="submit" class="btn btn-success fw-bold" id="btnSave">Save</button>
             <button type="submit" class="btn btn-warning fw-bold">Update</button>
             <button type="submit" class="btn btn-danger fw-bold">Delete</button>
             <button type="submit" class="btn btn-info fw-bold">Search</button>
@@ -204,39 +204,13 @@
         <table class="table table-light">
             <thead class="bg-danger table table-striped">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Contact</th>
-                <th scope="col">Salery</th>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Item Qty</th>
+                <th scope="col">Item Price</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>0001</td>
-                <td>Oshan</td>
-                <td>Govinna</td>
-                <td>0763572516</td>
-                <td>75000/=</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>0002</td>
-                <td>Sadun</td>
-                <td>Horana</td>
-                <td>0783572516</td>
-                <td>45000/=</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>0003</td>
-                <td>Kamal</td>
-                <td>Colombo</td>
-                <td>0781368069</td>
-                <td>55000/=</td>
-            </tr>
+            <tbody id="itemTable">
 
             </tbody>
         </table>
@@ -273,6 +247,17 @@
         $("#dashboardContent").css("display", "block");
         $("#itemContent").css("display", "none");
         $("#customerContent").css("display", "none");
+    });
+
+    $("#btnSave").click(function () {
+        let itemId = $("#txtitemId").val();
+        let itemName = $("#txtitemname").val();
+        let itemQty = $("#txtitemQty").val();
+        let itemPrice = $("#txtitemPrice").val();
+
+        /*create a html row*/
+        let row = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
+        $("#itemTable").append(row);
     });
 
 </script>
