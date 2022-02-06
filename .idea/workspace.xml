@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Item Table to data Add">
-      <change afterPath="$PROJECT_DIR$/Assignment.SPA/assets/R.jpeg" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="DashBoard Complete">
+      <change afterPath="$PROJECT_DIR$/assets/images/boostrap dashboard.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/assets/R.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/assets/images/R.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +36,35 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment.SPA/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\assets\images" />
+      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\04_SPA" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\BootstrapPOS" />
-      <recent name="E:\work HTML\My project\My-web-Page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,14 +94,7 @@
       <workItem from="1643596293648" duration="8486000" />
       <workItem from="1643769080685" duration="592000" />
       <workItem from="1643859665789" duration="13908000" />
-      <workItem from="1644125476151" duration="9583000" />
-    </task>
-    <task id="LOCAL-00008" summary="skills div complete">
-      <created>1642219118065</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1642219118065</updated>
+      <workItem from="1644125476151" duration="14290000" />
     </task>
     <task id="LOCAL-00009" summary="Skills section complete">
       <created>1642230054832</created>
@@ -423,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643912538245</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="DashBoard Complete">
+      <created>1644145889511</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1644145889511</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +458,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Education white line Create" />
     <MESSAGE value="Education red circle,red line,white circle,white line create complete" />
     <MESSAGE value="Education div" />
     <MESSAGE value="Education div complete" />
@@ -467,6 +482,7 @@
     <MESSAGE value="pages link" />
     <MESSAGE value="Ui complete" />
     <MESSAGE value="Item Table to data Add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Item Table to data Add" />
+    <MESSAGE value="DashBoard Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="DashBoard Complete" />
   </component>
 </project>
