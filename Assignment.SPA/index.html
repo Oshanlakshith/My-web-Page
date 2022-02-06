@@ -11,7 +11,41 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/style.css" rel="stylesheet">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
+<style>
+
+    #main {
+        background: url("assets/R.jpeg") no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: 50% 50%;
+        width: 100%;
+    }
+
+   .up {
+        font-size: 4rem;
+        font-weight: 700;
+        right: 0;
+        background-position: 50% 50%;
+        margin: auto;
+        position: absolute;
+        font-family: 'Abril Fatface', cursive;
+        top: 45px;
+    }
+   .down{
+       font-size: 4rem;
+       font-weight: 700;
+       right: 0;
+       background-position: 50% 50%;
+       margin: auto;
+       position: absolute;
+       font-family: 'Abril Fatface', cursive;
+       top: 110px;
+   }
+</style>
 <body>
 <!--Navigation Start-->
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark shadow-lg">
@@ -42,10 +76,10 @@
 <!--Navigation End-->
 
 <!--Dashboard Content Start-->
-<section class="container-fluid" id="dashboardContent">
+<!--<section class="container-fluid" id="dashboardContent">
     <section class="row">
-        <div class="col-8">
-            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+        <div class="col-lg-8">
+            <div class="carousel slide" data-bs-ride="carousel " id="carouselExampleCaptions">
                 <div class="carousel-indicators">
                     <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
                             data-bs-target="#carouselExampleCaptions" type="button"></button>
@@ -54,23 +88,26 @@
                     <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
                             type="button"></button>
                 </div>
-                <div class="carousel-inner">
+
+                <div class="carousel-inner image">
                     <div class="carousel-item active">
-                        <img src="../04_SPA/assets/images/image1.jpg" class="img-fluid" alt="Responsive image">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+
+                            <img src="../04_SPA/assets/images/image1.jpg" class="img-fluid" alt="Responsive image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item image">
                         <img alt="..." class="d-block w-100" src="assets/images/image2.webp">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img alt="..." class="d-block w-500" src="assets/images/image3.jpg">
+                    <div class="carousel-item image">
+                        <img alt="..." class="d-block w-100" src="assets/images/image3.jpg">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
@@ -93,6 +130,17 @@
         </div>
         </div>
     </section>
+</section>-->
+
+<section id="main">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-lg-7 text-center">
+                <h1 class="up text-success">Nature has always</h1>
+                <h1 class="down text-danger">Cared for Us!</h1>
+            </div>
+        </div>
+    </div>
 </section>
 <!--Dashboard Content End-->
 
@@ -198,14 +246,14 @@
 <script>
 
     // hide all content
-    $("#dashboardContent").css("display", "block");
+    $("#main").css("display", "block");
     $("#customerContent").css("display", "none");
     $("#itemContent").css("display", "none");
 
 
     $("#linkCustomer").click(function () {
         $("#customerContent").css("display", "block");
-        $("#dashboardContent").css("display", "none");
+        $("#main").css("display", "none");
         $("#itemContent").css("display", "none");
 
     });
@@ -213,13 +261,13 @@
     $("#linkItem").click(function () {
         $("#itemContent").css("display", "block");
         $("#customerContent").css("display", "none");
-        $("#dashboardContent").css("display", "none");
+        $("#main").css("display", "none");
 
     });
 
 
     $("#linkHome").click(function () {
-        $("#dashboardContent").css("display", "block");
+        $("#main").css("display", "block");
         $("#itemContent").css("display", "none");
         $("#customerContent").css("display", "none");
     });

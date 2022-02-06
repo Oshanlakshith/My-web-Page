@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Item Table to data Add">
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/assets/R.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +35,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment.SPA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment.SPA/assets" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\04_SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\BootstrapPOS" />
       <recent name="E:\work HTML\My project\My-web-Page" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\BootstrapPOS\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +77,8 @@
       <workItem from="1643514830859" duration="6478000" />
       <workItem from="1643596293648" duration="8486000" />
       <workItem from="1643769080685" duration="592000" />
-      <workItem from="1643859665789" duration="12898000" />
+      <workItem from="1643859665789" duration="13908000" />
+      <workItem from="1644125476151" duration="9583000" />
     </task>
     <task id="LOCAL-00008" summary="skills div complete">
       <created>1642219118065</created>
