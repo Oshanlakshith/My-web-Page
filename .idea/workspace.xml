@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="DashBoard Complete">
-      <change afterPath="$PROJECT_DIR$/assets/images/boostrap dashboard.PNG" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="boostrap Assignment Add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/assets/R.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/assets/images/R.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +91,7 @@
       <workItem from="1643596293648" duration="8486000" />
       <workItem from="1643769080685" duration="592000" />
       <workItem from="1643859665789" duration="13908000" />
-      <workItem from="1644125476151" duration="14290000" />
-    </task>
-    <task id="LOCAL-00009" summary="Skills section complete">
-      <created>1642230054832</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1642230054832</updated>
+      <workItem from="1644125476151" duration="16533000" />
     </task>
     <task id="LOCAL-00010" summary="css assignment add 1,2,3,4,5,7,8,9,10">
       <created>1642304061947</created>
@@ -439,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644145889511</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="boostrap Assignment Add">
+      <created>1644167013655</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1644167013655</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +455,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Education red circle,red line,white circle,white line create complete" />
     <MESSAGE value="Education div" />
     <MESSAGE value="Education div complete" />
     <MESSAGE value="Education section complete" />
@@ -483,6 +479,7 @@
     <MESSAGE value="Ui complete" />
     <MESSAGE value="Item Table to data Add" />
     <MESSAGE value="DashBoard Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="DashBoard Complete" />
+    <MESSAGE value="boostrap Assignment Add" />
+    <option name="LAST_COMMIT_MESSAGE" value="boostrap Assignment Add" />
   </component>
 </project>
