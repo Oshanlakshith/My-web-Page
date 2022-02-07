@@ -25,7 +25,7 @@
         width: 100%;
     }
 
-   .up {
+    .up {
         font-size: 4rem;
         font-weight: 700;
         right: 0;
@@ -35,16 +35,17 @@
         font-family: 'Abril Fatface', cursive;
         top: 45px;
     }
-   .down{
-       font-size: 4rem;
-       font-weight: 700;
-       right: 0;
-       background-position: 50% 50%;
-       margin: auto;
-       position: absolute;
-       font-family: 'Abril Fatface', cursive;
-       top: 110px;
-   }
+
+    .down {
+        font-size: 4rem;
+        font-weight: 700;
+        right: 0;
+        background-position: 50% 50%;
+        margin: auto;
+        position: absolute;
+        font-family: 'Abril Fatface', cursive;
+        top: 110px;
+    }
 </style>
 <body>
 <!--Navigation Start-->
@@ -272,26 +273,76 @@
         $("#customerContent").css("display", "none");
     });
 
-    $("#btnSave").click(function () {
-        let itemId = $("#txtitemId").val();
-        let itemName = $("#txtitemname").val();
-        let itemQty = $("#txtitemQty").val();
-        let itemPrice = $("#txtitemPrice").val();
 
-        let row = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
-        $("#itemTable").append(row);
+    $("#txtitemId").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtitemname").focus();
+        }
+    });
+    $("#txtitemname").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtitemQty").focus();
+        }
+    });
+    $("#txtitemQty").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtitemPrice").focus();
+        }
     });
 
-    $("#btnCustomerSave").click(function () {
-        let customerId = $("#txtCustomerId").val();
-        let customerName = $("#txtCustomerName").val();
-        let customerAddress = $("#txtCustomerAddress").val();
-        let customerContact = $("#txtCustomerContact").val();
-        let customerSalary = $("#txtCustomerSalary").val();
+    $("#txtitemPrice").keydown(function (event) {
+        if (event.key == "Enter") {
+            let itemId = $("#txtitemId").val();
+            let itemName = $("#txtitemname").val();
+            let itemQty = $("#txtitemQty").val();
+            let itemPrice = $("#txtitemPrice").val();
 
+            let row = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
+            $("#itemTable").append(row);
+        }
+    });
+    /*    $("#btnCustomerSave").click(function () {
+             let customerId = $("#txtCustomerId").val();
+             let customerName = $("#txtCustomerName").val();
+             let customerAddress = $("#txtCustomerAddress").val();
+             let customerContact = $("#txtCustomerContact").val();
+             let customerSalary = $("#txtCustomerSalary").val();
 
-        let row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerContact}</td><td>${customerSalary}</td></tr>`;
-        $("#customerTable").append(row);
+             let row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerContact}</td><td>${customerSalary}</td></tr>`;
+             $("#customerTable").append(row);
+         });*/
+
+    $("#txtCustomerId").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerName").focus();
+        }
+    });
+    $("#txtCustomerName").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerAddress").focus();
+        }
+    });
+    $("#txtCustomerAddress").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerContact").focus();
+        }
+    });
+    $("#txtCustomerContact").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtCustomerSalary").focus();
+        }
+    });
+    $("#txtCustomerSalary").keydown(function (event) {
+        if (event.key == "Enter") {
+            let customerId = $("#txtCustomerId").val();
+            let customerName = $("#txtCustomerName").val();
+            let customerAddress = $("#txtCustomerAddress").val();
+            let customerContact = $("#txtCustomerContact").val();
+            let customerSalary = $("#txtCustomerSalary").val();
+
+            let row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerContact}</td><td>${customerSalary}</td></tr>`;
+            $("#customerTable").append(row);
+        }
     });
 
 </script>
