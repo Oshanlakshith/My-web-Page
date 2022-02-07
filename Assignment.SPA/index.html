@@ -236,6 +236,7 @@
             </thead>
             <tbody id="itemTable">
 
+
             </tbody>
         </table>
     </section>
@@ -300,7 +301,21 @@
             let row = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
             $("#itemTable").append(row);
         }
+        $("#itemTable>tr").click(function () {
+            let itemId = $(this).children(":eq(0)").text();
+            let itemName = $(this).children(":eq(1)").text();
+            let itemQty = $(this).children(":eq(2)").text();
+            let itemPrice = $(this).children(":eq(3)").text();
+
+            console.log(itemId, itemName, itemQty, itemPrice)
+            $("#txtitemId").val(itemId);
+            $("#txtitemname").val(itemName);
+            $("#txtitemQty").val(itemQty);
+            $("#txtitemPrice").val(itemPrice);
+        });
     });
+
+
     /*    $("#btnCustomerSave").click(function () {
              let customerId = $("#txtCustomerId").val();
              let customerName = $("#txtCustomerName").val();
@@ -343,6 +358,22 @@
             let row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerContact}</td><td>${customerSalary}</td></tr>`;
             $("#customerTable").append(row);
         }
+
+        $("#customerTable>tr").click(function () {
+            let customerId = $(this).children(":eq(0)").text();
+            let customerName = $(this).children(":eq(1)").text();
+            let customerAddress = $(this).children(":eq(2)").text();
+            let customerContact = $(this).children(":eq(3)").text();
+            let customerSalary = $(this).children(":eq(4)").text();
+
+            console.log(customerId, customerName, customerAddress, customerContact, customerSalary)
+
+            $("#txtCustomerId").val(customerId);
+            $("#txtCustomerName").val(customerName);
+            $("#txtCustomerAddress").val(customerAddress);
+            $("#txtCustomerContact").val(customerContact);
+            $("#txtCustomerSalary").val(customerSalary);
+        });
     });
 
 </script>
