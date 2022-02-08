@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        background: #000115;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cursor {
+        z-index: 999;
+        position: fixed;
+        background: #0dcaf0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        pointer-events: none;
+        box-shadow: 0 0 20px #16419c,
+        0 0 20px #16419c,
+        0 0 20px #16419c
+    }
+</style>
+<body>
+<div class="cursor">
+
+</div>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+    });
+</script>
+</body>
+</html>
