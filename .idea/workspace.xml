@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="color update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
     </list>
@@ -104,14 +104,7 @@
       <workItem from="1644259147100" duration="4245000" />
       <workItem from="1644296519420" duration="7100000" />
       <workItem from="1644373838299" duration="831000" />
-      <workItem from="1644475681364" duration="3828000" />
-    </task>
-    <task id="LOCAL-00014" summary=" project all images add">
-      <created>1642313122916</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1642313122916</updated>
+      <workItem from="1644475681364" duration="4665000" />
     </task>
     <task id="LOCAL-00015" summary="project section complete">
       <created>1642313869202</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644479095829</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="color update">
+      <created>1644479928439</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1644479928439</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +468,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BootstrapPOS directory" />
     <MESSAGE value="navbar create" />
     <MESSAGE value="customer form complete" />
     <MESSAGE value="customer form update text box" />
@@ -493,6 +492,7 @@
     <MESSAGE value="table data set to text field" />
     <MESSAGE value="pointer java Script task" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="color update" />
+    <option name="LAST_COMMIT_MESSAGE" value="color update" />
   </component>
 </project>
