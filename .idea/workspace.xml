@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="font update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Educations.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Skills.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +47,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Css Framework/BootstrapPOS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
       <recent name="E:\work HTML\My project\My-web-Page\javaScript" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets\images" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\javaScript\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
@@ -105,14 +111,7 @@
       <workItem from="1644259147100" duration="4245000" />
       <workItem from="1644296519420" duration="7100000" />
       <workItem from="1644373838299" duration="831000" />
-      <workItem from="1644475681364" duration="6416000" />
-    </task>
-    <task id="LOCAL-00016" summary="project section 2 page">
-      <created>1642323619942</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1642323619942</updated>
+      <workItem from="1644475681364" duration="7110000" />
     </task>
     <task id="LOCAL-00017" summary="projrct2 page div complete">
       <created>1642325875474</created>
@@ -450,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644480648273</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="update">
+      <created>1644483980091</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1644483980091</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,9 +497,9 @@
     <MESSAGE value="&quot;Enter&quot;next Text Feild to set" />
     <MESSAGE value="table data set to text field" />
     <MESSAGE value="pointer java Script task" />
-    <MESSAGE value="update" />
     <MESSAGE value="color update" />
     <MESSAGE value="font update" />
-    <option name="LAST_COMMIT_MESSAGE" value="font update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

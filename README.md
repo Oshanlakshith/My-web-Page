@@ -6,4 +6,9 @@
 <p></p>
 <a href="https://www.figma.com/file/FrlPt2VVLfT0xMQcsTvvrx/Untitled?node-id=0%3A3">Figma Fx</a>
 
-![Image of yaktocat](customer.png)
+![Image of yaktocat](home.png)
+![Image of yaktocat](about.png)
+![Image of yaktocat](Educations.PNG)
+![Image of yaktocat](Skills.PNG)
+![Image of yaktocat](Projects.PNG)
+![Image of yaktocat](contact.PNG)
