@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="color update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="font update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +105,7 @@
       <workItem from="1644259147100" duration="4245000" />
       <workItem from="1644296519420" duration="7100000" />
       <workItem from="1644373838299" duration="831000" />
-      <workItem from="1644475681364" duration="4665000" />
-    </task>
-    <task id="LOCAL-00015" summary="project section complete">
-      <created>1642313869202</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1642313869202</updated>
+      <workItem from="1644475681364" duration="6416000" />
     </task>
     <task id="LOCAL-00016" summary="project section 2 page">
       <created>1642323619942</created>
@@ -449,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644479928439</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="font update">
+      <created>1644480648273</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1644480648273</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +469,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="navbar create" />
     <MESSAGE value="customer form complete" />
     <MESSAGE value="customer form update text box" />
     <MESSAGE value="Item Form Complete" />
@@ -493,6 +493,7 @@
     <MESSAGE value="pointer java Script task" />
     <MESSAGE value="update" />
     <MESSAGE value="color update" />
-    <option name="LAST_COMMIT_MESSAGE" value="color update" />
+    <MESSAGE value="font update" />
+    <option name="LAST_COMMIT_MESSAGE" value="font update" />
   </component>
 </project>
