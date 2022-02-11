@@ -5,7 +5,8 @@
     <title>Cursor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Old+Standard+TT:ital@1&family=Open+Sans+Condensed:wght@300&family=Tangerine&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Old+Standard+TT:ital@1&family=Open+Sans+Condensed:wght@300&family=Tangerine&family=Teko:wght@300&display=swap"
+          rel="stylesheet">
 </head>
 <style>
     body {
@@ -21,21 +22,22 @@
         font-family: 'Abril Fatface', cursive;
         animation: colors 5s infinite;
     }
+
     @keyframes colors {
         0% {
             color: red;
         }
-        25%{
+        25% {
             color: violet;
         }
-        50%{
+        50% {
             color: #a510a3;
         }
-        75%{
+        75% {
             color: aqua;
         }
-        100%{
-          color: chartreuse;
+        100% {
+            color: chartreuse;
         }
     }
 
@@ -43,19 +45,29 @@
 <body>
 
 <div class="cursor">
-    <h1>Hello Ijse</h1>
+    <h1>Hello There..?</h1>
 </div>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
     const cursor = document.querySelector(".cursor");
-    $("body").mousemove(function (event){
+    $("body").mousemove(function (event) {
         let x = event.pageX;
         let y = event.pageY;
 
         cursor.style.top = y + "px";
         cursor.style.left = x + "px";
     });
+    let text = $('h1').text();
+    var count = 0;
 
+    function animateWord() {
+        $('h1').text(text.substr(0, count));
+        count++;
+        if(count==text.length){
+            count=0;
+        }
+    }
+    setInterval(animateWord, 200);
 </script>
 </body>
 </html>
