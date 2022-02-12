@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Testing</title>
 </head>
 <style>
     header {
@@ -112,8 +111,48 @@
         padding: 10px;
         color: white;
         font-weight: bold;
+    }
+
+
+    @media all and (max-width: 425px) {
+        header > img {
+            width: 213px;
+            margin: 21px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            top: 9px;
+        }
+
+        header > ul {
+            font-size: 13px;
+        }
+
+        body > main > nav {
+            display: none;
+        }
+
+        main > section {
+            margin-left: 0;
+        }
+
+        main > section > section {
+            flex-direction: column;
+            height: 633px;
+        }
 
     }
+
+    /*  header > img {
+          width: 213px;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 13px;
+          text-align: center;
+      }*/
 </style>
 <body>
 <header>

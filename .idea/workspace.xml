@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Update Animate test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment2 Update">
       <change beforePath="$PROJECT_DIR$/Css Assignments/css Assignment-2/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-2/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,14 +106,7 @@
       <workItem from="1644373838299" duration="831000" />
       <workItem from="1644475681364" duration="9014000" />
       <workItem from="1644546719912" duration="6592000" />
-      <workItem from="1644640703118" duration="6344000" />
-    </task>
-    <task id="LOCAL-00020" summary="Assignment 10">
-      <created>1642396638966</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1642396638966</updated>
+      <workItem from="1644640703118" duration="9262000" />
     </task>
     <task id="LOCAL-00021" summary="Assignment div add">
       <created>1642396994845</created>
@@ -454,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644572946207</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Assignment2 Update">
+      <created>1644651030638</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1644651030640</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +470,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Place order form nav bar create" />
     <MESSAGE value="Place order form invoice Detail" />
     <MESSAGE value="Place order form=invoice and item select form create" />
     <MESSAGE value="final form" />
@@ -498,6 +494,7 @@
     <MESSAGE value="Update readme" />
     <MESSAGE value="Update JS" />
     <MESSAGE value="Update Animate test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Animate test" />
+    <MESSAGE value="Assignment2 Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment2 Update" />
   </component>
 </project>
