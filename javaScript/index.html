@@ -63,10 +63,11 @@
     function animateWord() {
         $('h1').text(text.substr(0, count));
         count++;
-        if(count==text.length){
-            count=0;
+        if (count == text.length) {
+            count = 0;
         }
     }
+
     setInterval(animateWord, 200);
 </script>
 </body>
