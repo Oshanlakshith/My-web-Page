@@ -152,7 +152,7 @@
         <form>
             <div class=" shadow-lg">
                 <label for="txtCustomerId" class="form-label fw-bold">Customer Id :</label>
-                <input type="number" class="form-control" id="txtCustomerId" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="txtCustomerId">
             </div>
             <div class="shadow-lg">
                 <label for="txtCustomerName" class="form-label fw-bold">Cutomer Name :</label>
@@ -164,11 +164,11 @@
             </div>
             <div class="shadow-lg">
                 <label for="txtCustomerContact" class="form-label fw-bold">Customer Contact :</label>
-                <input type="number" class="form-control" id="txtCustomerContact">
+                <input type="text" class="form-control" id="txtCustomerContact">
             </div>
             <div class="mb-3 shadow-lg">
                 <label for="txtCustomerSalary" class="form-label fw-bold">Customer Salary :</label>
-                <input type="number" class="form-control" id="txtCustomerSalary">
+                <input type="text" class="form-control" id="txtCustomerSalary">
             </div>
 
             <button type="submit" class="btn btn-success fw-bold" id="btnCustomerSave">Save</button>
@@ -376,7 +376,57 @@
         });
     });
     $("#txtCustomerId").keydown(function (event) {
-      console.log(event.key)
+        console.log(event.key)
+    });
+
+
+    var regExCId = /^(C00-)[0-9]{3,4}$/;
+
+    $("#txtCustomerId").keyup(function () {
+
+        let input = $("#txtCustomerId").val();
+        if (regExCId.test(input)) {
+            $("#txtCustomerId").css('border', '2px solid green');
+        } else {
+            $("#txtCustomerId").css('border', '2px solid red');
+        }
+    });
+
+    var regExCName = /^[A-z]{3,15}$/;
+    $("#txtCustomerName").keydown(function () {
+        let input = $("#txtCustomerName").val();
+        if (regExCName.test(input)) {
+            $("#txtCustomerName").css('border', '2px solid green');
+        } else {
+            $("#txtCustomerName").css('border', '2px solid red');
+        }
+    });
+    var regExAddress = /^[0-9]{1,4}?[,]? [A-z]{1,20}$/;
+    $("#txtCustomerAddress").keydown(function () {
+        let input = $("#txtCustomerAddress").val();
+        if (regExAddress.test(input)) {
+            $("#txtCustomerAddress").css('border', '2px solid green');
+        } else {
+            $("#txtCustomerAddress").css('border', '2px solid red');
+        }
+    });
+    var regExContact = /^[0-9]{3}[-]?[0-9]{6,8}$/;
+    $("#txtCustomerContact").keydown(function () {
+        let input = $("#txtCustomerContact").val();
+        if (regExContact.test(input)) {
+            $("#txtCustomerContact").css('border', '2px solid green');
+        } else {
+            $("#txtCustomerContact").css('border', '2px solid red');
+        }
+    });
+    var regExSalary = /^[0-9]{4,6}$/;
+    $("#txtCustomerSalary").keydown(function () {
+        let input = $("#txtCustomerSalary").val();
+        if (regExSalary.test(input)) {
+            $("#txtCustomerSalary").css('border', '2px solid green');
+        } else {
+            $("#txtCustomerSalary").css('border', '2px solid red');
+        }
     });
 </script>
 </body>

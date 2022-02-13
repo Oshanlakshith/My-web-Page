@@ -17,10 +17,23 @@
         z-index: 188;
         background-color: #5e8484;
     }
-    @media all and (min-width: 320px)and (max-width: 350px){
-      #name{
-          color: red;
-      }
+
+    @media all and (max-width: 450px) {
+        main > section {
+            height: 736px;
+            width: 1314px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        header {
+            position: absolute;
+            height: 70px;
+            width: 1314px;
+            box-shadow: -2px 6px 9px -4px #0e0707;
+            z-index: 188;
+            background-color: #5e8484;
+        }
     }
 
     header > ul {
@@ -157,9 +170,6 @@
         color: white;
     }
 
-    .Activities {
-        background-color: #96a1a7;
-    }
 
     .projects {
         background-color: #96a1a7;
@@ -169,9 +179,6 @@
         color: white;
     }
 
-    .service {
-        background-color: #96a1a7;
-    }
 
     .about {
         color: white;
@@ -700,29 +707,35 @@
         top: 178px;
         position: absolute;
     }
+
     aside > div:nth-child(14) {
         right: 200px;
         top: 457px;
         position: absolute;
     }
+
     aside > div:nth-child(15) {
         left: 192px;
         top: 290px;
         position: absolute;
     }
-    .education-div>h2{
+
+    .education-div > h2 {
         text-align: center;
         color: white;
         font-size: 20px;
     }
-    .education-div>h1{
+
+    .education-div > h1 {
         text-align: center;
         color: #52ffe7;
         font-size: 20px;
     }
-    #ijse{
+
+    #ijse {
         color: #fc001a;
     }
+
 </style>
 <body>
 <header>
