@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Assignment2 Update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/Db/Db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,21 @@
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,13 +115,8 @@
       <workItem from="1644546719912" duration="6592000" />
       <workItem from="1644640703118" duration="9262000" />
       <workItem from="1644730474728" duration="3732000" />
-    </task>
-    <task id="LOCAL-00021" summary="Assignment div add">
-      <created>1642396994845</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1642396994845</updated>
+      <workItem from="1644981688044" duration="6137000" />
+      <workItem from="1645242353099" duration="18236000" />
     </task>
     <task id="LOCAL-00022" summary="Assignment images add">
       <created>1642398603413</created>
@@ -439,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644651030640</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="update">
+      <created>1644981854312</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1644981854312</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,12 +499,12 @@
     <MESSAGE value="pointer java Script task" />
     <MESSAGE value="color update" />
     <MESSAGE value="font update" />
-    <MESSAGE value="update" />
     <MESSAGE value="README Update" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="Update JS" />
     <MESSAGE value="Update Animate test" />
     <MESSAGE value="Assignment2 Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment2 Update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

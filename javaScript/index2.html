@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+</head>
+<style>
+    h1 {
+        top: 139px;
+        left: 573px;
+        margin: auto;
+        position: absolute;
+        color: red;
+    }
+
+    #row {
+        display: flex;
+        width: 1000px;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 0;
+        left: 193px;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        border-bottom: 2px solid black;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        align-content: center;
+        position: relative;
+    }
+
+    img {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        margin: auto;
+    }
+
+    h2 {
+        top: 33px;
+        right: 59px;
+        margin: auto;
+        position: absolute;
+    }
+</style>
+<body>
+<h1>Java Script Queue</h1>
+<div id="row">
+    <div class="box"><img id="one" src="https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif">
+    </div>
+    <div class="box"><img id="two" src="https://www.animatedimages.org/data/media/106/animated-man-image-0316.gif">
+    </div>
+    <div class="box"><img id="three" src="https://www.animatedimages.org/data/media/106/animated-man-image-0242.gif">
+    </div>
+    <div class="box"><img id="four" src="https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif">
+    </div>
+    <div class="box"><img id="five" src="https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif">
+    </div>
+
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/styles/style.css"></script>
+<script>
+    var idArray = [$("#one"), $("#two"), $("#three"), $("#four"), $("#five")];
+    var images = ["https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif",
+        "https://www.animatedimages.org/data/media/106/animated-man-image-0316.gif",
+        "https://www.animatedimages.org/data/media/106/animated-man-image-0242.gif",
+        "https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif",
+        "https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif"];
+
+
+    function assign() {
+        var tempArray = Array();
+        tempArray.push(images[4]);
+        for (var i = 0; i < idArray.length - 1; i++) {
+            tempArray.push(images[i]);
+        }
+        images = tempArray;
+        for (let i = 0; i < idArray.length; i++) {
+            idArray[i].attr("src", images[i])
+        }
+    }
+
+    setInterval(assign, 1000);
+</script>
+</body>
+</html>
