@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Queue</title>
+</head>
+<style>
+    body {
+        background: #3f476f;
+    }
+
+    .row {
+        width: 800px;
+        height: 200px;
+        border-bottom: 2px solid white;
+        position: relative;
+        margin: auto;
+
+    }
+
+    #rowOne {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        background: red;
+        border-radius: 15%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        margin: auto;
+    }
+
+    .rowTwo {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        right: -151px;
+        border-radius: 15%;
+        bottom: -43px;
+        position: relative;
+        margin: auto;
+    }
+
+    #rowThree {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 15%;
+        background: deeppink;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        margin: auto;
+    }
+
+  .rowTwo:nth-child(1){
+      background: #0a53be;
+  }
+    .rowTwo:nth-child(2){
+        background: #af9b18;
+    }
+    .rowTwo:nth-child(3){
+        background: #b1a599;
+    }
+    .rowTwo:nth-child(4){
+        background: #17f5cc;
+    }
+</style>
+<section id="background">
+    <div class="row">
+        <div id="rowOne"></div>
+    </div>
+    <div class="row">
+        <div class="rowTwo"></div>
+        <div class="rowTwo"></div>
+        <div class="rowTwo"></div>
+        <div class="rowTwo"></div>
+    </div>
+    <div class="row">
+        <div id="rowThree"></div>
+    </div>
+</section>
+<body>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/styles/style.css"></script>
+<script>
+
+</script>
+</body>
+</html>

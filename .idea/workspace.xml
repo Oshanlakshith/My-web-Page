@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="java Script task 2">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="javaScript update task 2">
+      <change afterPath="$PROJECT_DIR$/javaScript/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,15 +60,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,14 +111,8 @@
       <workItem from="1644640703118" duration="9262000" />
       <workItem from="1644730474728" duration="3732000" />
       <workItem from="1644981688044" duration="6137000" />
-      <workItem from="1645242353099" duration="21125000" />
-    </task>
-    <task id="LOCAL-00023" summary="Assignment images add update">
-      <created>1642401437065</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1642401437065</updated>
+      <workItem from="1645242353099" duration="22197000" />
+      <workItem from="1645331519364" duration="3134000" />
     </task>
     <task id="LOCAL-00024" summary="Assignment images add complete">
       <created>1642404092852</created>
@@ -458,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645271310847</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="javaScript update task 2">
+      <created>1645290877199</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1645290877199</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +476,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Place order form=invoice and item select form create" />
     <MESSAGE value="final form" />
     <MESSAGE value="Place order form Table add" />
     <MESSAGE value="Home Page" />
@@ -502,6 +500,7 @@
     <MESSAGE value="Assignment2 Update" />
     <MESSAGE value="update" />
     <MESSAGE value="java Script task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="java Script task 2" />
+    <MESSAGE value="javaScript update task 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="javaScript update task 2" />
   </component>
 </project>
