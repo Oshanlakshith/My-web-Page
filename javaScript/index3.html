@@ -23,7 +23,6 @@
         height: 100px;
         border: 2px solid black;
         display: inline-block;
-        background: red;
         border-radius: 15%;
         top: 0;
         left: 0;
@@ -31,7 +30,7 @@
         margin: auto;
     }
 
-    .rowTwo {
+    #rowTwo {
         width: 100px;
         height: 100px;
         border: 2px solid black;
@@ -49,24 +48,58 @@
         border: 2px solid black;
         display: inline-block;
         border-radius: 15%;
-        background: deeppink;
-        right: 0;
-        bottom: 0;
+        right: 408px;
+        bottom: 49px;
         position: absolute;
         margin: auto;
     }
 
-  .rowTwo:nth-child(1){
-      background: #0a53be;
-  }
-    .rowTwo:nth-child(2){
-        background: #af9b18;
+    #rowFour {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 15%;
+        right: 276px;
+        bottom: 49px;
+        position: absolute;
+        margin: auto;
     }
-    .rowTwo:nth-child(3){
-        background: #b1a599;
+
+    #rowFive {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 15%;
+        right: 139px;
+        bottom: 49px;
+        position: absolute;
+        margin: auto;
     }
-    .rowTwo:nth-child(4){
-        background: #17f5cc;
+
+    #rowSix {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 15%;
+        right: 24px;
+        bottom: 49px;
+        position: absolute;
+        margin: auto;
+    }
+
+    #rowSix {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #030507;
+        display: inline-block;
+        border-radius: 15%;
+        right: 24px;
+        bottom: 49px;
+        position: absolute;
+        margin: auto;
     }
 </style>
 <section id="background">
@@ -74,13 +107,13 @@
         <div id="rowOne"></div>
     </div>
     <div class="row">
-        <div class="rowTwo"></div>
-        <div class="rowTwo"></div>
-        <div class="rowTwo"></div>
-        <div class="rowTwo"></div>
+        <div id="rowTwo"></div>
+        <div id="rowThree"></div>
+        <div id="rowFour"></div>
+        <div id="rowFive"></div>
     </div>
     <div class="row">
-        <div id="rowThree"></div>
+        <div id="rowSix"></div>
     </div>
 </section>
 <body>
@@ -89,6 +122,29 @@
 <script src="assets/styles/style.css"></script>
 <script>
 
+    var colorArray = ["#2484b3", "#6a6627", "#C1E758FF", "#1BC265FF", "#C21B5EFF", "#E87509FF"];
+    var idArray = [$("#rowOne"), $("#rowTwo"), $("#rowThree"), $("#rowFour"), $("#rowFive"), $("#rowSix")];
+
+
+    function assign() {
+        var one = colorArray[0];
+        var two = colorArray[1];
+        var three = colorArray[2];
+        var four = colorArray[3];
+        var five = colorArray[4];
+        var six = colorArray[5];
+
+      colorArray = [six, one, two, three, four, five];
+
+            idArray[0].css("background-color", colorArray[0]);
+            idArray[1].css("background-color", colorArray[1]);
+            idArray[2].css("background-color", colorArray[2]);
+            idArray[3].css("background-color", colorArray[3]);
+            idArray[4].css("background-color", colorArray[4]);
+            idArray[5].css("background-color", colorArray[5]);
+
+    }
+   setInterval(assign, 600);
 </script>
 </body>
 </html>

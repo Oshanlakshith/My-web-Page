@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="javaScript update task 2">
-      <change afterPath="$PROJECT_DIR$/javaScript/index3.html" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="javaScript update task 3 css set">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +62,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,14 +116,8 @@
       <workItem from="1644730474728" duration="3732000" />
       <workItem from="1644981688044" duration="6137000" />
       <workItem from="1645242353099" duration="22197000" />
-      <workItem from="1645331519364" duration="3134000" />
-    </task>
-    <task id="LOCAL-00024" summary="Assignment images add complete">
-      <created>1642404092852</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1642404092852</updated>
+      <workItem from="1645331519364" duration="3974000" />
+      <workItem from="1645422983568" duration="18549000" />
     </task>
     <task id="LOCAL-00025" summary="Assignment animation Complete">
       <created>1642404515888</created>
@@ -457,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645290877199</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="javaScript update task 3 css set">
+      <created>1645378689384</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1645378689385</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +481,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="final form" />
     <MESSAGE value="Place order form Table add" />
     <MESSAGE value="Home Page" />
     <MESSAGE value="Home page nav bar" />
@@ -501,6 +505,19 @@
     <MESSAGE value="update" />
     <MESSAGE value="java Script task 2" />
     <MESSAGE value="javaScript update task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="javaScript update task 2" />
+    <MESSAGE value="javaScript update task 3 css set" />
+    <option name="LAST_COMMIT_MESSAGE" value="javaScript update task 3 css set" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/javaScript/index2.html</url>
+          <line>76</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

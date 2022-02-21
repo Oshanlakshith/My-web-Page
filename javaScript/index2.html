@@ -76,7 +76,6 @@
         "https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif",
         "https://www.animatedimages.org/data/media/106/animated-man-image-0343.gif"];
 
-
     function assign() {
         var tempArray = Array();
         tempArray.push(images[4]);
@@ -84,9 +83,11 @@
             tempArray.push(images[i]);
         }
         images = tempArray;
+
         for (let i = 0; i < idArray.length; i++) {
-            idArray[i].attr("src", images[i])
+            idArray[i].attr("src", images[i]);
         }
+
     }
 
     setInterval(assign, 1000);
