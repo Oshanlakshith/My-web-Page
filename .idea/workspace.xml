@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="javaScript update task 3 css set">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="javaScript update task 3 complete">
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/Db/Db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/images/R.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/images/image2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/jQuery/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +92,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Css Framework/BootstrapPOS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
+      <recent name="E:\work HTML\My project\My-web-Page" />
       <recent name="E:\work HTML\My project\My-web-Page\javaScript" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\assets\images" />
@@ -117,14 +166,7 @@
       <workItem from="1644981688044" duration="6137000" />
       <workItem from="1645242353099" duration="22197000" />
       <workItem from="1645331519364" duration="3974000" />
-      <workItem from="1645422983568" duration="18549000" />
-    </task>
-    <task id="LOCAL-00025" summary="Assignment animation Complete">
-      <created>1642404515888</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1642404515888</updated>
+      <workItem from="1645422983568" duration="20156000" />
     </task>
     <task id="LOCAL-00026" summary="linked to project github">
       <created>1642439093419</created>
@@ -462,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645378689385</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="javaScript update task 3 complete">
+      <created>1645463523178</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1645463523181</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Place order form Table add" />
     <MESSAGE value="Home Page" />
     <MESSAGE value="Home page nav bar" />
     <MESSAGE value="home page image set" />
@@ -506,7 +554,8 @@
     <MESSAGE value="java Script task 2" />
     <MESSAGE value="javaScript update task 2" />
     <MESSAGE value="javaScript update task 3 css set" />
-    <option name="LAST_COMMIT_MESSAGE" value="javaScript update task 3 css set" />
+    <MESSAGE value="javaScript update task 3 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="javaScript update task 3 complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
