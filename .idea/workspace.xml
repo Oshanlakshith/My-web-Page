@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="pos Item Form Update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="pos Item form Validate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +102,7 @@
       <workItem from="1645331519364" duration="3974000" />
       <workItem from="1645422983568" duration="25683000" />
       <workItem from="1645727183287" duration="26000" />
-      <workItem from="1645849326782" duration="4203000" />
-    </task>
-    <task id="LOCAL-00028" summary="Assignment to button add">
-      <created>1642442330465</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1642442330465</updated>
+      <workItem from="1645849326782" duration="5960000" />
     </task>
     <task id="LOCAL-00029" summary="Assignment button And linked github linked to add">
       <created>1642443418580</created>
@@ -447,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645470128826</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="pos Item form Validate">
+      <created>1645859805507</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1645859805507</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home page image set" />
     <MESSAGE value="Assignment.SPA" />
     <MESSAGE value="Assignment.SPA single page" />
     <MESSAGE value="pages link" />
@@ -491,7 +490,8 @@
     <MESSAGE value="javaScript update task 3 complete" />
     <MESSAGE value="pos CustomerFormUpdate" />
     <MESSAGE value="pos Item Form Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="pos Item Form Update" />
+    <MESSAGE value="pos Item form Validate" />
+    <option name="LAST_COMMIT_MESSAGE" value="pos Item form Validate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,6 +500,12 @@
           <url>file://$PROJECT_DIR$/javaScript/index2.html</url>
           <line>76</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html</url>
+          <line>161</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
