@@ -49,17 +49,13 @@
 </div>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
-    //const cursor = document.querySelector(".cursor");
     $("h1").css("position", "relative");
     $(window).mousemove(function (event) {
-        /*        let x = event.pageX;
-                let y = event.pageY;
 
-                cursor.style.top = y + "px";
-                cursor.style.left = x + "px";*/
         $("h1").css("left", event.pageX);
         $("h1").css("top", event.pageY);
     });
+   /*=================================Animate=====================================================*/
     let text = $('h1').text();
     var count = 0;
 
@@ -70,7 +66,6 @@
             count = 0;
         }
     }
-
     setInterval(animateWord, 200);
 </script>
 </body>

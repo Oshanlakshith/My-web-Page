@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="pos Item form Validate">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="SPA Item form Validate">
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,19 @@
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,14 +117,8 @@
       <workItem from="1645331519364" duration="3974000" />
       <workItem from="1645422983568" duration="25683000" />
       <workItem from="1645727183287" duration="26000" />
-      <workItem from="1645849326782" duration="5960000" />
-    </task>
-    <task id="LOCAL-00029" summary="Assignment button And linked github linked to add">
-      <created>1642443418580</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1642443418580</updated>
+      <workItem from="1645849326782" duration="7463000" />
+      <workItem from="1646017581046" duration="3846000" />
     </task>
     <task id="LOCAL-00030" summary="update">
       <created>1642443610363</created>
@@ -447,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645859805507</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="SPA Item form Validate">
+      <created>1645861326390</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1645861326390</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +482,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assignment.SPA" />
     <MESSAGE value="Assignment.SPA single page" />
     <MESSAGE value="pages link" />
     <MESSAGE value="Ui complete" />
@@ -491,7 +506,8 @@
     <MESSAGE value="pos CustomerFormUpdate" />
     <MESSAGE value="pos Item Form Update" />
     <MESSAGE value="pos Item form Validate" />
-    <option name="LAST_COMMIT_MESSAGE" value="pos Item form Validate" />
+    <MESSAGE value="SPA Item form Validate" />
+    <option name="LAST_COMMIT_MESSAGE" value="SPA Item form Validate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,7 +520,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html</url>
           <line>161</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

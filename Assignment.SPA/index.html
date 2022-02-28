@@ -71,6 +71,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" id="linkOrder" href="#">Order</a>
                 </li>
+
             </ul>
         </div>
     </div>
@@ -257,8 +258,177 @@
 </section>
 <!--Item Manage Content End-->
 
+<!--Place Order Form-->
+<div class="container-fluid flex-grow-1 flex-column" id="placeOrderPage"
+     style="background-color: #c8c8c8; display: none">
+    <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+        <h1><i class="fas fa-cart-plus"></i> Place Order</h1>
 
+    </div>
+    <div class="row justify-content-around" style="height: max-content">
+        <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+            <h3 class="text-center bg-success p-2 text-light">Invoice</h3>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderId">Order ID</label>
+                    <input class="form-control border-dark" id="orderId" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderDate">Order Date</label>
+                    <input class="form-control border-dark" id="orderDate" type="date">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="selectcustomerId">Customer ID</label>
+                    <select aria-label="Default select example" class="form-select border-dark"
+                            id="selectcustomerId">
+                        <option selected>-Select Customer-</option>
+                        <option value="1">C001</option>
+                        <option value="2">C002</option>
+                        <option value="3">C003</option>
+                        <option value="4">C004</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="pocName">Customer Name</label>
+                    <input class="form-control border-dark" disabled id="pocName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="pocaddress">Customer Address</label>
+                    <input class="form-control border-dark" disabled id="pocaddress" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="pocsalary">Customer Salary</label>
+                    <input class="form-control border-dark" disabled id="pocsalary" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+            <h3 class="text-center bg-success p-2 text-light">Items</h3>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemcode">Item Code</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="itemcode">
+                        <option selected>-Select Item-</option>
+                        <option value="1">I001</option>
+                        <option value="2">I002</option>
+                        <option value="3">I003</option>
+                        <option value="4">I004</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="poiName">Item Name</label>
+                    <input class="form-control border-dark" disabled id="poiName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemPrice">Unit Price</label>
+                    <input class="form-control border-dark" disabled id="itemPrice" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="qtyOnHand">Qty On Hand</label>
+                    <input class="form-control border-dark" disabled id="qtyOnHand" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="buyQty">Buy Qty</label>
+                    <input class="form-control border-dark" id="buyQty" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <button class="btn btn-primary rounded-2" type="submit">Add To Cart</button>
+                    <button class="btn btn-secondary rounded-2" type="submit">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-3 p-3 mt-3 bg-light mt-1">
+            <h3 class="text-center bg-success p-2 text-light">Payment Details</h3>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="total">Total (Rs.)</label>
+                    <input class="form-control border-dark" disabled id="total" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="noOfItems">No Of Items</label>
+                    <input class="form-control border-dark" disabled id="noOfItems" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="cash">Cash (Rs.)</label>
+                    <input class="form-control border-dark" id="cash" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="balance">Balance (Rs.)</label>
+                    <input class="form-control border-dark" disabled id="balance" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary rounded-2 mt-2" type="submit">Place Order</button>
+                    <button class="btn btn-secondary rounded-2 mt-2" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-1 justify-content-around">
+        <div class="col-10 p-3 mt-3">
+            <h3 class="text-center bg-success p-2 text-light">Cart Details</h3>
+            <div class="cartTbleDiv bg-light">
+                <table class="table table-hover table-bordered">
+                    <thead class="bg-info">
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Name</th>
+                        <th>Unit Price</th>
+                        <th>Qty On Hand</th>
+                        <th>Buy Qty</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>I001</td>
+                        <td>Keerisamba 5kg</td>
+                        <td>150.00</td>
+                        <td>200</td>
+                        <td>2</td>
+                        <td>
+                            <button class="bg-danger" type="button">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I002</td>
+                        <td>Dhal 2kg</td>
+                        <td>200.00</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>
+                            <button class="bg-danger" type="button">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I003</td>
+                        <td>Keerisamba 10kg</td>
+                        <td>450.00</td>
+                        <td>150</td>
+                        <td>1</td>
+                        <td>
+                            <button class="bg-danger" type="button">Delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="controller/customerController.js"></script>
 <script src="Db/Db.js"></script>
 <script>
 
@@ -266,28 +436,37 @@
     $("#main").css("display", "block");
     $("#customerContent").css("display", "none");
     $("#itemContent").css("display", "none");
+    $("#placeOrderPage").css("display", "none");
 
 
     $("#linkCustomer").click(function () {
         $("#customerContent").css("display", "block");
         $("#main").css("display", "none");
         $("#itemContent").css("display", "none");
-
+        $("#placeOrderPage").css("display", "none");
     });
 
     $("#linkItem").click(function () {
         $("#itemContent").css("display", "block");
         $("#customerContent").css("display", "none");
         $("#main").css("display", "none");
+        $("#placeOrderPage").css("display", "none");
+    });
+    $("#linkOrder").click(function () {
+        $("#placeOrderPage").css("display", "block");
+        $("#main").css("display", "none");
+        $("#itemContent").css("display", "none");
+        $("#customerContent").css("display", "none");
 
     });
-
 
     $("#linkHome").click(function () {
         $("#main").css("display", "block");
         $("#itemContent").css("display", "none");
         $("#customerContent").css("display", "none");
+        $("#placeOrderPage").css("display", "none");
     });
+
 
     $('#txtitemId,#txtitemname,#txtitemQty,#txtitemPrice').click(function () {
         Ivalidation();
@@ -463,67 +642,71 @@
         console.log(event.key)
     });
 
-    function validation() {
-        var regExCId = /^(C00-)[0-9]{3,4}$/;
+    /*    function validation() {
+            var regExCId = /^(C00-)[0-9]{3,4}$/;
+            var regExCName = /^[A-z]{3,15}$/;
+            var regExAddress = /^[0-9]{1,4}?[,]? [A-z]{1,20}$/;
+            var regExContact = /^[0-9]{3}[-]?[0-9]{6,8}$/;
+            var regExSalary = /^[0-9]{4,6}$/;
 
-        $("#txtCustomerId").keyup(function () {
+            $("#txtCustomerId").keyup(function () {
 
-            let input = $("#txtCustomerId").val();
-            if (regExCId.test(input)) {
-                $("#txtCustomerId").css('border', '2px solid green');
-                $("#lblcusid").text("");
-            } else {
-                $("#txtCustomerId").css('border', '2px solid red');
-                $("#lblcusid").text("Cus ID is a required field : Pattern C00-000");
+                let input = $("#txtCustomerId").val();
+                if (regExCId.test(input)) {
+                    $("#txtCustomerId").css('border', '2px solid green');
+                    $("#lblcusid").text("");
+                } else {
+                    $("#txtCustomerId").css('border', '2px solid red');
+                    $("#lblcusid").text("Cus ID is a required field : Pattern C00-000");
 
-            }
-        });
+                }
+            });
 
-        var regExCName = /^[A-z]{3,15}$/;
-        $("#txtCustomerName").keydown(function () {
-            let input = $("#txtCustomerName").val();
-            if (regExCName.test(input)) {
-                $("#txtCustomerName").css('border', '2px solid green');
-                $("#lblcusname").text("");
-            } else {
-                $("#txtCustomerName").css('border', '2px solid red');
-                $("#lblcusname").text("Cus Name is a required field : Mimimum 5, Max 20, Spaces Allowed")
-            }
-        });
-        var regExAddress = /^[0-9]{1,4}?[,]? [A-z]{1,20}$/;
-        $("#txtCustomerAddress").keydown(function () {
-            let input = $("#txtCustomerAddress").val();
-            if (regExAddress.test(input)) {
-                $("#txtCustomerAddress").css('border', '2px solid green');
-                $("#lblcusaddress").text("");
-            } else {
-                $("#txtCustomerAddress").css('border', '2px solid red');
-                $("#lblcusaddress").text("Cus Address is a required field : Mimum 7");
-            }
-        });
-        var regExContact = /^[0-9]{3}[-]?[0-9]{6,8}$/;
-        $("#txtCustomerContact").keydown(function () {
-            let input = $("#txtCustomerContact").val();
-            if (regExContact.test(input)) {
-                $("#txtCustomerContact").css('border', '2px solid green');
-                $("#lblcuscontact").text("");
-            } else {
-                $("#txtCustomerContact").css('border', '2px solid red');
-                $("#lblcuscontact").text("Cus Contact is a required field : Mimum 10");
-            }
-        });
-        var regExSalary = /^[0-9]{4,6}$/;
-        $("#txtCustomerSalary").keydown(function () {
-            let input = $("#txtCustomerSalary").val();
-            if (regExSalary.test(input)) {
-                $("#txtCustomerSalary").css('border', '2px solid green');
-                $("#lblcussalery").text("");
-            } else {
-                $("#txtCustomerSalary").css('border', '2px solid red');
-                $("#lblcussalery").text("Cus salery is a required field :minimum 3");
-            }
-        });
-    }
+
+            $("#txtCustomerName").keydown(function () {
+                let input = $("#txtCustomerName").val();
+                if (regExCName.test(input)) {
+                    $("#txtCustomerName").css('border', '2px solid green');
+                    $("#lblcusname").text("");
+                } else {
+                    $("#txtCustomerName").css('border', '2px solid red');
+                    $("#lblcusname").text("Cus Name is a required field : Mimimum 5, Max 20, Spaces Allowed")
+                }
+            });
+
+            $("#txtCustomerAddress").keydown(function () {
+                let input = $("#txtCustomerAddress").val();
+                if (regExAddress.test(input)) {
+                    $("#txtCustomerAddress").css('border', '2px solid green');
+                    $("#lblcusaddress").text("");
+                } else {
+                    $("#txtCustomerAddress").css('border', '2px solid red');
+                    $("#lblcusaddress").text("Cus Address is a required field : Mimum 7");
+                }
+            });
+
+            $("#txtCustomerContact").keydown(function () {
+                let input = $("#txtCustomerContact").val();
+                if (regExContact.test(input)) {
+                    $("#txtCustomerContact").css('border', '2px solid green');
+                    $("#lblcuscontact").text("");
+                } else {
+                    $("#txtCustomerContact").css('border', '2px solid red');
+                    $("#lblcuscontact").text("Cus Contact is a required field : Mimum 10");
+                }
+            });
+
+            $("#txtCustomerSalary").keydown(function () {
+                let input = $("#txtCustomerSalary").val();
+                if (regExSalary.test(input)) {
+                    $("#txtCustomerSalary").css('border', '2px solid green');
+                    $("#lblcussalery").text("");
+                } else {
+                    $("#txtCustomerSalary").css('border', '2px solid red');
+                    $("#lblcussalery").text("Cus salery is a required field :minimum 3");
+                }
+            });
+        }*/
 
 </script>
 </body>
