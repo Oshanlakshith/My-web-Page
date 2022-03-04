@@ -1,144 +1,545 @@
-$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact,#txtCustomerSalary').click(function () {
-    validation();
-    forcuss();
+$(".customerHomeNavi").click(function () {
+    $("#carouselExampleIndicators").css('display', 'block');
+    $("#customerPage").css('display', 'none');
 });
 
-function forcuss() {
-    $("#txtCustomerId").keydown(function (event) {
-        if (event.key == "Enter") {
+/*Customer Form Text Field Validations*/
+
+let regCusId = /^(C00-)[0-9]{4}$/;
+let regCustName = /^[A-z .]{3,}$/;
+let regCustAddress = /^[A-z ,.0-9]{3,}$/;
+let regCustSalary = /^[1-9][0-9]{3,}([.][0-9]{2})?$/;
+
+let searchCustId;
+
+// Add Customer Form Validations
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('blur', function () {
+    addCustomerFormValidation();
+});
+
+$("#txtCustomerId").on('keyup', function (event) {
+    setAddCustomerButtonDisableOrNot();
+    if (event.key == "Enter") {
+        checkIfAddCustomerFormValid();
+    }
+});
+
+$("#txtCustomerName").on('keyup', function (event) {
+    setAddCustomerButtonDisableOrNot();
+    if (event.key == "Enter") {
+        checkIfAddCustomerFormValid();
+    }
+});
+
+$("#txtCustomerAddress").on('keyup', function (event) {
+    setAddCustomerButtonDisableOrNot();
+    if (event.key == "Enter") {
+        checkIfAddCustomerFormValid();
+    }
+});
+
+$("#txtCustomerSalary").on('keyup', function (event) {
+    setAddCustomerButtonDisableOrNot();
+    if (event.key == "Enter") {
+        checkIfAddCustomerFormValid();
+    }
+});
+
+function addCustomerFormValidation() {
+    var custId = $("#txtCustomerId").val();
+    $("#txtCustomerId").css('border', '2px solid green');
+    $("#customerIdError").text("");
+    if (regCusId.test(custId)) {
+        var custName = $("#txtCustomerName").val();
+        if (regCustName.test(custName)) {
+            $("#txtCustomerName").css('border', '2px solid green');
+            $("#customerNameError").text("");
+            var custAddress = $("#txtCustomerAddress").val();
+            if (regCustAddress.test(custAddress)) {
+                var custSalary = $("#txtCustomerSalary").val();
+                var response = regCustSalary.test(custSalary);
+                $("#txtCustomerAddress").css('border', '2px solid green');
+                $("#customerAddressError").text("");
+                if (response) {
+                    $("#txtCustomerSalary").css('border', '2px solid green');
+                    $("#customerSalaryError").text("");
+                    return true;
+                } else {
+                    $("#txtCustomerSalary").css('border', '2px solid red');
+                    $("#customerSalaryError").text("Customer Salary is a required field.Pattern : 1000.00 or 1000");
+                    return false;
+                }
+            } else {
+                $("#txtCustomerAddress").css('border', '2px solid red');
+                $("#customerAddressError").text("Customer address is a required field.");
+                return false;
+            }
+        } else {
+            $("#txtCustomerName").css('border', '2px solid red');
+            $("#customerNameError").text("Customer name is a required field.");
+            return false;
+        }
+    } else {
+        $("#txtCustomerId").css('border', '2px solid red');
+        $("#customerIdError").text("Cust ID is a required field.Pattern : C00-0001");
+        return false;
+    }
+}
+
+function setAddCustomerButtonDisableOrNot() {
+    let check = addCustomerFormValidation();
+    if (check) {
+        $("#btnRegisterCustomer").attr('disabled', false);
+    } else {
+        $("#btnRegisterCustomer").attr('disabled', true);
+    }
+}
+
+function checkIfAddCustomerFormValid() {
+    var custID = $("#txtCustomerId").val();
+    if (regCusId.test(custID)) {
+        $("#txtCustomerName").focus();
+        var custName = $("#txtCustomerName").val();
+        if (regCustName.test(custName)) {
+            $("#txtCustomerAddress").focus();
+            var custAddress = $("#txtCustomerAddress").val();
+            if (regCustAddress.test(custAddress)) {
+                $("#txtCustomerSalary").focus();
+                var custSalary = $("#txtCustomerSalary").val();
+                var response = regCustSalary.test(custSalary);
+                if (response) {
+                    let res = confirm("Do you want to add this Customer..?");
+                    if (res) {
+                        addCustomer();
+                        clearCustomerFields();
+                        loadAllCustomers();
+                        generateCustomerId();
+                    }
+                } else {
+                    $("#txtCustomerSalary").focus();
+                }
+            } else {
+                $("#txtCustomerAddress").focus();
+            }
+        } else {
             $("#txtCustomerName").focus();
         }
-    });
-    $("#txtCustomerName").keydown(function (event) {
+    } else {
+        $("#txtCustomerId").focus();
+    }
+}
+
+// Update Customer Form Validations
+
+$('#txtSearchCustomerId,#txtCName,#txtCaddress,#txtCsalary').on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#txtSearchCustomerId").keyup(function (event) {
+    searchCustId = $("#txtSearchCustomerId").val();
+    if (regCusId.test(searchCustId)) {
+        $("#txtSearchCustomerId").css('border', '2px solid green');
+        $("#searchCustIdError").text("");
         if (event.key == "Enter") {
-            $("#txtCustomerAddress").focus();
+            var foundOrNot = false;
+            let foundCustomer = searchCustomer(searchCustId);
+            if (foundCustomer) {
+                $("#txtCName").val(foundCustomer.getName());
+                $("#txtCaddress").val(foundCustomer.getAddress());
+                $("#txtCsalary").val(foundCustomer.getSalary());
+                $("#btnUpdateCust").prop('disabled', false);
+                foundOrNot = true;
+                $("#txtCName").css('border', '2px solid green');
+                $("#txtCaddress").css('border', '2px solid green');
+                $("#txtCsalary").css('border', '2px solid green');
+                $("#txtCName").focus();
+            }
+            if (foundOrNot == false) {
+                alert("Customer Not Found");
+                $("#txtCName").val("");
+                $("#txtCaddress").val("");
+                $("#txtCsalary").val("");
+                $("#btnUpdateCust").prop('disabled', true);
+            }
         }
-    });
-    $("#txtCustomerAddress").keydown(function (event) {
+    } else {
+        $("#txtSearchCustomerId").css('border', '2px solid red');
+        $("#searchCustIdError").text("Cust ID is a required field.Pattern : C00-001");
+        $("#btnUpdateCust").prop('disabled', true);
+    }
+});
+
+$("#txtCName").keyup(function (event) {
+    var custName = $("#txtCName").val();
+    if (regCustName.test(custName)) {
+        $("#txtCName").css('border', '2px solid green');
+        $("#cNameError").text("");
         if (event.key == "Enter") {
-            $("#txtCustomerContact").focus();
+            $("#txtCaddress").focus();
         }
-    });
-    $("#txtCustomerContact").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerSalary").focus();
-        }
-    });
-    $("#txtCustomerSalary").keydown(function (event) {
-        if (event.key == "Enter") {
-            saveCustomer();
-            loadTable();
-            textFildAdd();
+        var custId = $("#txtSearchCustomerId").val();
+        var custSalary = $("#txtCsalary").val();
+        var custAddress = $("#txtCaddress").val();
+
+        if (regCusId.test(custId) && regCustName.test(custName) && regCustAddress.test(custAddress) && regCustSalary.test(custSalary)) {
+            $("#btnUpdateCust").prop('disabled', false);
         }
 
-        function loadTable() {
-            $("#customerTable").empty();
-            for (var i of CustomerDB) {
-                let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.contact}</td><td>${i.salery}</td></tr>`;
-                $("#customerTable").append(row);
+    } else {
+        $("#btnUpdateCust").prop('disabled', true);
+        $("#txtCName").css('border', '2px solid red');
+        $("#cNameError").text("Cust name is a required field.");
+    }
+});
+
+$("#txtCaddress").keyup(function (event) {
+    var custAddress = $("#txtCaddress").val();
+    if (regCustAddress.test(custAddress)) {
+        $("#txtCaddress").css('border', '2px solid green');
+        $("#cAddressError").text("");
+        if (event.key == "Enter") {
+            $("#txtCsalary").focus();
+        }
+        var custId = $("#txtSearchCustomerId").val();
+        var custName = $("#txtCName").val();
+        var custSalary = $("#txtCsalary").val();
+
+        if (regCusId.test(custId) && regCustName.test(custName) && regCustAddress.test(custAddress) && regCustSalary.test(custSalary)) {
+            $("#btnUpdateCust").prop('disabled', false);
+        }
+
+    } else {
+        $("#btnUpdateCust").prop('disabled', true);
+        $("#txtCaddress").css('border', '2px solid red');
+        $("#cAddressError").text("Customer address is a required field.");
+    }
+});
+
+$("#txtCsalary").keyup(function (event) {
+    var custSalary = $("#txtCsalary").val();
+    if (regCustSalary.test(custSalary)) {
+        $("#txtCsalary").css('border', '2px solid green');
+        $("#cSalaryError").text("");
+        var custId = $("#txtSearchCustomerId").val();
+        var custName = $("#txtCName").val();
+        var custAddress = $("#txtCaddress").val();
+
+        if (regCusId.test(custId) && regCustName.test(custName) && regCustAddress.test(custAddress) && regCustSalary.test(custSalary)) {
+            $("#btnUpdateCust").prop('disabled', false);
+        }
+
+        if (event.key == "Enter") {
+            let res = confirm("Do you want to update this customer?");
+            if (res) {
+                updateCustomer();
+                loadAllCustomers();
             }
         }
 
-        function saveCustomer() {
-            let cusId = $("#txtCustomerId").val();
-            let cusname = $("#txtCustomerName").val();
-            let cusaddress = $("#txtCustomerAddress").val();
-            let cuscontact = $("#txtCustomerContact").val();
-            let cussalery = $("#txtCustomerSalary").val();
+    } else {
+        $("#btnUpdateCust").prop('disabled', true);
+        $("#txtCsalary").css('border', '2px solid red');
+        $("#cSalaryError").text("Customer Salary is a required field.Pattern : 1000.00 or 1000");
+    }
+});
 
-            var customerOb = {
-                id: cusId,
-                name: cusname,
-                address: cusaddress,
-                contact: cuscontact,
-                salery: cussalery
-            };
-            CustomerDB.push(customerOb);
+// Delete Customer Form Validations
+
+$("#txtSearchCId").keyup(function (event) {
+    searchCustId = $("#txtSearchCId").val();
+    if (regCusId.test(searchCustId)) {
+        $("#txtSearchCId").css('border', '2px solid green');
+        $("#searchCustomerIdError").text("");
+        if (event.key == "Enter") {
+            var foundOrNot = false;
+            let foundCustomer = searchCustomer(searchCustId);
+            if (foundCustomer) {
+                $("#txtdcName").val(foundCustomer.getName());
+                $("#txtdcAddress").val(foundCustomer.getAddress());
+                $("#txtdcSalary").val(foundCustomer.getSalary());
+                $("#btnDeleteCustomer").prop('disabled', false);
+                foundOrNot = true;
+                $("#btnDeleteCustomer").focus();
+            }
+            if (foundOrNot == false) {
+                alert("Customer Not Found");
+                $("#txtdcName").val("");
+                $("#txtdcAddress").val("");
+                $("#txtdcSalary").val("");
+                $("#btnDeleteCustomer").prop('disabled', true);
+            }
         }
+    } else {
+        $("#txtSearchCId").css('border', '2px solid red');
+        $("#searchCustomerIdError").text("Cust ID is a required field.Pattern : C00-001");
+        $("#btnDeleteCustomer").prop('disabled', true);
+    }
+});
 
-        function textFildAdd() {
-            $("#customerTable>tr").click(function () {
-                let customerId = $(this).children(":eq(0)").text();
-                let customerName = $(this).children(":eq(1)").text();
-                let customerAddress = $(this).children(":eq(2)").text();
-                let customerContact = $(this).children(":eq(3)").text();
-                let customerSalary = $(this).children(":eq(4)").text();
+/*End Of Customer Form Text Field Validations*/
 
-                console.log(customerId, customerName, customerAddress, customerContact, customerSalary)
+/*CRUD Operations Of Customer Form*/
 
-                $("#txtCustomerId").val(customerId);
-                $("#txtCustomerName").val(customerName);
-                $("#txtCustomerAddress").val(customerAddress);
-                $("#txtCustomerContact").val(customerContact);
-                $("#txtCustomerSalary").val(customerSalary);
-            });
-        }
+// Add Customer
 
-    });
+function addCustomer() {
+    let customerId = $("#txtCustomerId").val();
+    let customerName = $("#txtCustomerName").val();
+    let customerAddress = $("#txtCustomerAddress").val();
+    let customerSalary = $("#txtCustomerSalary").val();
+
+    var customer = new CustomerDTO(customerId, customerName, customerAddress, customerSalary);
+    customerDB.push(customer);
 }
 
-function validation() {
-    var regExCId = /^(C00-)[0-9]{3,4}$/;
-    var regExCName = /^[A-z]{3,15}$/;
-    var regExAddress = /^[0-9]{1,4}?[,]? [A-z]{1,20}$/;
-    var regExContact = /^[0-9]{3}[-]?[0-9]{6,8}$/;
-    var regExSalary = /^[0-9]{4,6}$/;
+// Search Customer
 
-    $("#txtCustomerId").keyup(function () {
-
-        let input = $("#txtCustomerId").val();
-        if (regExCId.test(input)) {
-            $("#txtCustomerId").css('border', '2px solid green');
-            $("#lblcusid").text("");
-        } else {
-            $("#txtCustomerId").css('border', '2px solid red');
-            $("#lblcusid").text("Cus ID is a required field : Pattern C00-000");
-
+function searchCustomer(searchId) {
+    for (var i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].getId() == searchId) {
+            return customerDB[i];
         }
-    });
-
-
-    $("#txtCustomerName").keydown(function () {
-        let input = $("#txtCustomerName").val();
-        if (regExCName.test(input)) {
-            $("#txtCustomerName").css('border', '2px solid green');
-            $("#lblcusname").text("");
-        } else {
-            $("#txtCustomerName").css('border', '2px solid red');
-            $("#lblcusname").text("Cus Name is a required field : Mimimum 5, Max 20, Spaces Allowed")
-        }
-    });
-
-    $("#txtCustomerAddress").keydown(function () {
-        let input = $("#txtCustomerAddress").val();
-        if (regExAddress.test(input)) {
-            $("#txtCustomerAddress").css('border', '2px solid green');
-            $("#lblcusaddress").text("");
-        } else {
-            $("#txtCustomerAddress").css('border', '2px solid red');
-            $("#lblcusaddress").text("Cus Address is a required field : Mimum 7");
-        }
-    });
-
-    $("#txtCustomerContact").keydown(function () {
-        let input = $("#txtCustomerContact").val();
-        if (regExContact.test(input)) {
-            $("#txtCustomerContact").css('border', '2px solid green');
-            $("#lblcuscontact").text("");
-        } else {
-            $("#txtCustomerContact").css('border', '2px solid red');
-            $("#lblcuscontact").text("Cus Contact is a required field : Mimum 10");
-        }
-    });
-
-    $("#txtCustomerSalary").keydown(function () {
-        let input = $("#txtCustomerSalary").val();
-        if (regExSalary.test(input)) {
-            $("#txtCustomerSalary").css('border', '2px solid green');
-            $("#lblcussalery").text("");
-        } else {
-            $("#txtCustomerSalary").css('border', '2px solid red');
-            $("#lblcussalery").text("Cus salery is a required field :minimum 3");
-        }
-    });
+    }
 }
+
+// Update Customer
+
+function updateCustomer() {
+    let updateCustId = $("#txtSearchCustomerId").val();
+    let updateCustName = $("#txtCName").val();
+    let updateCustAddress = $("#txtCaddress").val();
+    let updateCustSalary = $("#txtCsalary").val();
+
+    for (var i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].getId() == updateCustId) {
+            customerDB[i].setId(updateCustId);
+            customerDB[i].setName(updateCustName);
+            customerDB[i].setAddress(updateCustAddress);
+            customerDB[i].setSalary(updateCustSalary);
+
+            clearUpdateCustomerFields();
+            $("#btnUpdateCust").prop('disabled', true);
+        }
+    }
+}
+
+// Delete Customer
+
+function deleteCustomer() {
+    let searchCustomerId = $("#txtSearchCId").val();
+    for (var i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].getId() == searchCustomerId) {
+            customerDB.splice(i, 1);
+            clearDeleteCustomerFields();
+            $("#btnDeleteCustomer").prop('disabled', true);
+        }
+    }
+}
+
+// Load all customers
+
+function loadAllCustomers() {
+    $("#customerTable").empty();
+    for (var i = 0; i < customerDB.length; i++) {
+        let tableRow = `<tr><td>${customerDB[i].getId()}</td><td>${customerDB[i].getName()}</td><td>${customerDB[i].getAddress()}</td><td>${customerDB[i].getSalary()}</td></tr>`;
+        $("#customerTable").append(tableRow);
+    }
+}
+
+/*End Of CRUD Operations*/
+
+/*Other Functions*/
+
+// Generate Customer Id
+
+function generateCustomerId() {
+    if (customerDB.length == 0) {
+        $("#txtCustomerId").val("C00-0001");
+    } else if (customerDB.length > 0) {
+        var id = customerDB[customerDB.length - 1].getId().split("-")[1];
+        var tempId = parseInt(id);
+        tempId = tempId + 1;
+        if (tempId <= 9) {
+            $("#txtCustomerId").val("C00-000" + tempId);
+        } else if (tempId <= 99) {
+            $("#txtCustomerId").val("C00-00" + tempId);
+        } else if (tempId <= 999) {
+            $("#txtCustomerId").val("C00-0" + tempId);
+        } else if (tempId <= 9999) {
+            $("#txtCustomerId").val("C00-" + tempId);
+        }
+    }
+}
+
+// Search Customer By Table
+
+function searchCustomerByTable(searchId) {
+    var customer = searchCustomer(searchId);
+    let foundOrNot = false;
+    if (customer) {
+        var id = customer.getId();
+        var name = customer.getName();
+        var address = customer.getAddress();
+        var salary = customer.getSalary();
+
+        $("#customerTable").empty();
+
+        let tableRow = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+        $("#customerTable").append(tableRow);
+        foundOrNot = true;
+    }
+    if (foundOrNot == false) {
+        alert("Customer Not Found");
+        loadAllCustomers();
+    }
+}
+
+/*Controller Functions*/
+// Add Customer Form
+
+$("#registerCustomer").on('shown.bs.modal', function () {
+    $(this).find("#txtCustomerId").focus();
+    generateCustomerId();
+});
+
+$("#btnRegisterCustomer").prop('disabled', true);
+
+$("#btnRegisterCustomer").click(function () {
+    let res = confirm("Do you want to add this customer?");
+    if (res) {
+        addCustomer();
+        clearCustomerFields();
+        loadAllCustomers();
+        generateCustomerId();
+    }
+});
+
+$("#btnclearcustomerform").click(function () {
+    clearCustomerFields();
+    generateCustomerId();
+});
+
+function clearCustomerFields() {
+    $("#txtCustomerId").focus();
+
+    $("#txtCustomerId").val("");
+    $("#txtCustomerName").val("");
+    $("#txtCustomerAddress").val("");
+    $("#txtCustomerSalary").val("");
+
+    $("#customerIdError").text("");
+    $("#customerNameError").text("");
+    $("#customerAddressError").text("");
+    $("#customerSalaryError").text("");
+
+    $("#txtCustomerId").css('border', '1px solid #ced4da');
+    $("#txtCustomerName").css('border', '1px solid #ced4da');
+    $("#txtCustomerAddress").css('border', '1px solid #ced4da');
+    $("#txtCustomerSalary").css('border', '1px solid #ced4da');
+
+    $("#btnRegisterCustomer").prop('disabled', true);
+}
+
+
+// Update Customer Form
+
+$("#btnUpdateCust").prop('disabled', true);
+
+$("#updateCustomer").on('shown.bs.modal', function () {
+    $(this).find("#txtSearchCustomerId").focus();
+});
+
+$("#btnUpdateCust").click(function () {
+    let res = confirm("Do you want to update this customer?");
+    if (res) {
+        updateCustomer();
+        loadAllCustomers();
+    }
+});
+
+$("#btnClearUpdateCustomer").click(function () {
+    $("#btnUpdateCust").prop('disabled', true);
+    clearUpdateCustomerFields();
+});
+
+function clearUpdateCustomerFields() {
+    $("#txtSearchCustomerId").focus();
+
+    $("#txtSearchCustomerId").val("");
+    $("#txtCName").val("");
+    $("#txtCaddress").val("");
+    $("#txtCsalary").val("");
+
+    $("#searchCustIdError").text("");
+    $("#cNameError").text("");
+    $("#cAddressError").text("");
+    $("#cSalaryError").text("");
+
+    $("#txtSearchCustomerId").css('border', '1px solid #ced4da');
+    $("#txtCName").css('border', '1px solid #ced4da');
+    $("#txtCaddress").css('border', '1px solid #ced4da');
+    $("#txtCsalary").css('border', '1px solid #ced4da');
+}
+
+// Delete Customer Form
+
+$("#btnDeleteCustomer").prop('disabled', true);
+
+$("#deleteCustomer").on('shown.bs.modal', function () {
+    $(this).find("#txtSearchCId").focus();
+});
+
+$("#btnDeleteCustomer").click(function () {
+    let res = confirm("Do you want to delete this customer?");
+    if (res) {
+        deleteCustomer();
+        loadAllCustomers();
+    }
+});
+
+$("#btnClearDeleteCustomerFields").click(function () {
+    $("#btnDeleteCustomer").prop('disabled', true);
+    clearDeleteCustomerFields();
+});
+
+function clearDeleteCustomerFields() {
+    $("#txtSearchCId").focus();
+
+    $("#txtSearchCId").val("");
+    $("#txtdcName").val("");
+    $("#txtdcAddress").val("");
+    $("#txtdcSalary").val("");
+
+    $("#searchCustomerIdError").text("");
+}
+
+//Other
+
+$("#searchCustomerForm").submit(function (e) {
+    e.preventDefault();
+});
+
+$("#txtSCustId").on('keyup', function (event) {
+    if (event.key == "Enter") {
+        var custId = $("#txtSCustId").val();
+        searchCustomerByTable(custId);
+    }
+});
+
+$("#btnSearchCustId").click(function () {
+    var custId = $("#txtSCustId").val();
+    searchCustomerByTable(custId);
+});
+
+$("#btnClearSearchField").click(function () {
+    $("#txtSCustId").val("");
+    loadAllCustomers();
+});

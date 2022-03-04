@@ -1,21 +1,15 @@
-<!--/**
-* @author : Sanu Vithanage
-* @since : 0.1.0
-**/-->
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS System</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/js/bootstrap.min.js">
+    <title>Bootstrap POS</title>
+    <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/style.css" rel="stylesheet">
-    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+<body>
 <style>
 
     #main {
@@ -47,9 +41,11 @@
         font-family: 'Abril Fatface', cursive;
         top: 110px;
     }
+
+    h1 {
+        font-family: 'Great Vibes', cursive;
+    }
 </style>
-<body>
-<!--Navigation Start-->
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark shadow-lg">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -76,65 +72,6 @@
         </div>
     </div>
 </nav>
-<!--Navigation End-->
-
-<!--Dashboard Content Start-->
-<!--<section class="container-fluid" id="dashboardContent">
-    <section class="row">
-        <div class="col-lg-8">
-            <div class="carousel slide" data-bs-ride="carousel " id="carouselExampleCaptions">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#carouselExampleCaptions" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
-                            type="button"></button>
-                </div>
-
-                <div class="carousel-inner image">
-                    <div class="carousel-item active">
-
-                            <img src="../04_SPA/assets/images/image1.jpg" class="img-fluid" alt="Responsive image">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-
-                    </div>
-                    <div class="carousel-item image">
-                        <img alt="..." class="d-block w-100" src="assets/images/image2.webp">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item image">
-                        <img alt="..." class="d-block w-100" src="assets/images/image3.jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </section>
-</section>-->
-
 <section id="main">
     <div class="container">
         <div class="row py-4">
@@ -145,120 +82,129 @@
         </div>
     </div>
 </section>
-<!--Dashboard Content End-->
 
-<!--Customer Manage Content Start-->
+<!--customer Form-->
 <section id="customerContent">
-    <section class="mb-2 shadow-lg">
-        <h1 class="text-light fw-bold text-center bg-success">Customer Form</h1>
-        <form>
-            <div class=" shadow-lg">
-                <label for="txtCustomerId" class="form-label fw-bold">Customer Id :</label>
-                <input type="text" class="form-control" id="txtCustomerId">
-                <p><small class="text-danger pl-1" id="lblcusid"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerName" class="form-label fw-bold">Cutomer Name :</label>
-                <input type="text" class="form-control" id="txtCustomerName">
-                <p><small class="text-danger pl-1" id="lblcusname"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerAddress" class="form-label fw-bold">Customer Address :</label>
-                <input type="text" class="form-control" id="txtCustomerAddress">
-                <p><small class="text-danger pl-1" id="lblcusaddress"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerContact" class="form-label fw-bold">Customer Contact :</label>
-                <input type="text" class="form-control" id="txtCustomerContact">
-                <p><small class="text-danger pl-1" id="lblcuscontact"></small></p>
-            </div>
-            <div class="mb-3 shadow-lg">
-                <label for="txtCustomerSalary" class="form-label fw-bold">Customer Salary :</label>
-                <input type="text" class="form-control" id="txtCustomerSalary">
-                <p><small class="text-danger pl-1" id="lblcussalery"></small></p>
-            </div>
+    <div class="container-fluid">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1 class="text-success "><i class="fas fa-users"></i> Customers</h1>
 
-            <button type="submit" class="btn btn-success fw-bold" id="btnCustomerSave">Save</button>
-            <button type="submit" class="btn btn-warning fw-bold">Update</button>
-            <button type="submit" class="btn btn-danger fw-bold">Delete</button>
-            <button type="submit" class="btn btn-info fw-bold">Search</button>
-        </form>
-    </section>
-    <section class="shadow-lg">
-        <table class="table table-light">
-            <thead class="bg-success table table-striped text-white">
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Contact</th>
-                <th scope="col">Salery</th>
-            </tr>
-            </thead>
-            <tbody id="customerTable">
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-primary p-2 text-light">Search Customer</h3>
+                <form id="searchCustomerForm">
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="txtSCustId"
+                               placeholder="Input Customer ID"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchCustId" type="button">
+                        Search
+                    </button>
+                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchField" type="reset">
+                        Clear
+                    </button>
+                </form>
+            </div>
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#registerCustomer"
+                        data-bs-toggle="modal">Add Customer
+                </button>
+                <!--<button class="btn btn-warning position-relative m-2">View All Customers</button>-->
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateCustomer"
+                        data-bs-toggle="modal">Update Customer
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
+                        data-bs-toggle="modal">Delete Customer
+                </button>
+            </div>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Customer Details</h3>
+                <div class="customeTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customerTable">
 
-            </tbody>
-        </table>
-    </section>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!--Customer Manage Content End-->
-
-<!--Item Manage Content Start-->
+<!--item form-->
 <section id="itemContent">
-    <section class="mb-2 shadow-lg">
-        <h1 class="text-light fw-bold text-center bg-danger">Item Form</h1>
-        <form>
-            <div class=" shadow-lg">
-                <label for="txtitemId" class="form-label fw-bold">Item code :</label>
-                <input type="text" class="form-control" id="txtitemId">
-                <p><small class="text-danger pl-1" id="lblitemid"></small></p>
-
+    <div class="container-fluid">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-boxes"></i> Items</h1>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item itemPageNavi itemHomeNavi">
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-success p-2 text-light">Search Item</h3>
+                <form id="searchItemForm">
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="txtSIcode"
+                               placeholder="Input Item Code"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchItem" type="button">Search
+                    </button>
+                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchItemField" type="reset">
+                        Clear
+                    </button>
+                </form>
             </div>
-            <div class="shadow-lg">
-                <label for="txtitemname" class="form-label fw-bold">Item Name :</label>
-                <input type="text" class="form-control" id="txtitemname">
-                <p><small class="text-danger pl-1" id="lblitemname"></small></p>
-
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#addItem"
+                        data-bs-toggle="modal">Add Item
+                </button>
+                <!--<button class="btn btn-warning position-relative m-2">View All Items</button>-->
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateItem"
+                        data-bs-toggle="modal">Update Item
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteItem"
+                        data-bs-toggle="modal">Delete Item
+                </button>
             </div>
-            <div class="shadow-lg">
-                <label for="txtitemQty" class="form-label fw-bold">Item Qty :</label>
-                <input type="text" class="form-control" id="txtitemQty">
-                <p><small class="text-danger pl-1" id="lblitemqty"></small></p>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Item Details</h3>
+                <div class="itemTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody id="itemTable">
 
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="shadow-lg mb-3">
-                <label for="txtitemPrice" class="form-label fw-bold">Item Price :</label>
-                <input type="text" class="form-control" id="txtitemPrice">
-                <p><small class="text-danger pl-1" id="lblitemprice"></small></p>
-
-            </div>
-
-            <button type="submit" class="btn btn-success fw-bold" id="btnSave">Save</button>
-            <button type="submit" class="btn btn-warning fw-bold">Update</button>
-            <button type="submit" class="btn btn-danger fw-bold">Delete</button>
-            <button type="submit" class="btn btn-info fw-bold">Search</button>
-        </form>
-    </section>
-    <section class="shadow-lg mb-2">
-        <table class="table table-light">
-            <thead class="bg-danger table table-striped">
-            <tr>
-                <th scope="col">Item Code</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Item Qty</th>
-                <th scope="col">Item Price</th>
-            </tr>
-            </thead>
-            <tbody id="itemTable">
-
-
-            </tbody>
-        </table>
-    </section>
+        </div>
+    </div>
 </section>
-<!--Item Manage Content End-->
-
-<!--Place Order Form-->
+<!--placeOrder Form-->
 <div class="container-fluid flex-grow-1 flex-column" id="placeOrderPage"
      style="background-color: #c8c8c8; display: none">
     <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
@@ -306,7 +252,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+        <div class="col-11 col-md-5 col-lg-5 p-3 mt-3" style="background-color: white">
             <h3 class="text-center bg-success p-2 text-light">Items</h3>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
@@ -319,7 +265,7 @@
                         <option value="4">I004</option>
                     </select>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-11 col-md-6 col-lg-4">
                     <label class="fw-bold" for="poiName">Item Name</label>
                     <input class="form-control border-dark" disabled id="poiName" type="text">
                 </div>
@@ -427,11 +373,298 @@
         </div>
     </div>
 </div>
+</section>
+
+<!-- Modal Register Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="registerCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Add Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Customer ID :</label>
+                        <input class="form-control" id="txtCustomerId"
+                               type="text">
+                        <p><small class="text-danger" id="customerIdError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Customer Name :</label>
+                        <input class="form-control" id="txtCustomerName"
+                               type="text">
+                        <p><small class="text-danger" id="customerNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Address :</label>
+                        <input class="form-control" id="txtCustomerAddress"
+                               type="text">
+                        <p><small class="text-danger" id="customerAddressError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Contact :</label>
+                        <input class="form-control" id="txtCustomerContact" type="text">
+                        <p><small class="text-danger" id="customerContactError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerSalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCustomerSalary"
+                               type="number">
+                        <p><small class="text-danger" id="customerSalaryError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnRegisterCustomer" type="submit">Save</button>
+                <button class="btn btn-secondary" id="btnclearcustomerform" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Update Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchCustomerId">Search Customer ID :</label>
+                        <input class="form-control" id="txtSearchCustomerId"
+                               type="text">
+                        <p><small class="text-danger" id="searchCustIdError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCName">Customer Name :</label>
+                        <input class="form-control" id="txtCName"
+                               type="text">
+                        <p><small class="text-danger" id="cNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCaddress">Customer Address :</label>
+                        <input class="form-control" id="txtCaddress"
+                               type="text">
+                        <p><small class="text-danger" id="cAddressError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCaddress">Customer Contact :</label>
+                        <input class="form-control" id="txtContact"
+                               type="text">
+                        <p><small class="text-danger" id="contactError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCsalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCsalary"
+                               type="number">
+                        <p><small class="text-danger" id="cSalaryError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnUpdateCust" type="submit">Update</button>
+                <button class="btn btn-secondary" id="btnClearUpdateCustomer" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchCId">Search Customer ID :</label>
+                        <input class="form-control" id="txtSearchCId"
+                               type="text">
+                        <p><small class="text-danger" id="searchCustomerIdError"></small></p>
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcName">Customer Name :</label>
+                            <input class="form-control" id="txtdcName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcAddress">Customer Address :</label>
+                            <input class="form-control" id="txtdcAddress"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtContact">Customer Contact :</label>
+                            <input class="form-control" id="txtContac"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcSalary">Customer Salary :</label>
+                            <input class="form-control" id="txtdcSalary"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="btnDeleteCustomer" type="submit">Delete</button>
+                <button class="btn btn-secondary" id="btnClearDeleteCustomerFields" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Add Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIcode">Item Code :</label>
+                        <input class="form-control" id="txtIcode"
+                               type="text">
+                        <p><small class="text-danger" id="itemCodeError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                        <input class="form-control" id="txtItemName"
+                               type="text">
+                        <p><small class="text-danger" id="itemNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtItemUnitPrice"
+                               type="number">
+                        <p><small class="text-danger" id="itemUnitPriceError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQty">Item Quantity :</label>
+                        <input class="form-control" id="txtItemQty"
+                               type="number">
+                        <p><small class="text-danger" id="itemQtyError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnAddItem" type="submit">Save</button>
+                <button class="btn btn-secondary" id="btnclearitemform" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Update Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchItemCode">Search Item Code :</label>
+                        <input class="form-control" id="txtSearchItemCode"
+                               type="text">
+                        <p><small class="text-danger" id="searchItemCodeError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIName">Item Name :</label>
+                        <input class="form-control" id="txtIName"
+                               type="text">
+                        <p><small class="text-danger" id="inameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtIUnitPrice"
+                               type="number">
+                        <p><small class="text-danger" id="iunitpriceError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIQty">Item Qty :</label>
+                        <input class="form-control" id="txtIQty"
+                               type="number">
+                        <p><small class="text-danger" id="iqtyError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnUpdateItem" type="submit">Update</button>
+                <button class="btn btn-secondary" id="btnClearUpdateItem" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchIcode">Search Item Code :</label>
+                        <input class="form-control" id="txtSearchIcode"
+                               type="text">
+                        <p><small class="text-danger" id="searchICodeError"></small></p>
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledName">Item Name :</label>
+                            <input class="form-control" id="txtdisabledName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledUnitPrice">Item Unit Price :</label>
+                            <input class="form-control" id="txtdisabledUnitPrice"
+                                   type="number">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledQty">Item Quantity :</label>
+                            <input class="form-control" id="txtdisabledQty"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="btnDeleteItem" type="submit">Delete</button>
+                <button class="btn btn-secondary" id="btnClearDeleteItemFormFields" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="controller/linkPages.js"></script>
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
-<script src="controller/linkPages.js"></script>
-<script src="Db/Db.js"></script>
-
+<script src="Db/DB.js"></script>
+<script src="Model/customerDTO.js"></script>
+<script src="Model/itemDTO.js"></script>
 </body>
 </html>
