@@ -130,6 +130,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Address</th>
+                            <th>Contact</th>
                             <th>Salary</th>
                         </tr>
                         </thead>
@@ -230,10 +231,8 @@
                     <select aria-label="Default select example" class="form-select border-dark"
                             id="selectcustomerId">
                         <option selected>-Select Customer-</option>
-                        <option value="1">C001</option>
-                        <option value="2">C002</option>
-                        <option value="3">C003</option>
-                        <option value="4">C004</option>
+
+
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
@@ -282,10 +281,6 @@
             </div>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label class="fw-bold" for="buyQty">Buy Qty</label>
-                    <input class="form-control border-dark" id="buyQty" type="text">
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
                     <button class="btn btn-primary rounded-2" type="submit">Add To Cart</button>
                     <button class="btn btn-secondary rounded-2" type="submit">Clear</button>
                 </div>
@@ -323,7 +318,7 @@
     </div>
     <div class="row mt-1 justify-content-around">
         <div class="col-10 p-3 mt-3">
-            <h3 class="text-center bg-success p-2 text-light">Cart Details</h3>
+            <h3 class="text-center bg-success p-2 text-light">Order Details</h3>
             <div class="cartTbleDiv bg-light">
                 <table class="table table-hover table-bordered">
                     <thead class="bg-info">
@@ -454,11 +449,12 @@
                         <p><small class="text-danger" id="cAddressError"></small></p>
                     </div>
                     <div class="ms-3 me-3">
-                        <label class="form-label fw-bold mb-0" for="txtCaddress">Customer Contact :</label>
-                        <input class="form-control" id="txtContact"
+                        <label class="form-label fw-bold mb-0" for="txtCContact">Customer Contact :</label>
+                        <input class="form-control" id="txtCContact"
                                type="text">
                         <p><small class="text-danger" id="contactError"></small></p>
                     </div>
+
                     <div class="ms-3 me-3">
                         <label class="form-label fw-bold mb-0" for="txtCsalary">Customer Salary :</label>
                         <input class="form-control" id="txtCsalary"
@@ -504,8 +500,8 @@
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="txtContact">Customer Contact :</label>
-                            <input class="form-control" id="txtContac"
+                            <label class="form-label fw-bold mb-0" for="txtdContact">Cart</label>
+                            <input class="form-control" id="txtdContact"
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
