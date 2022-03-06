@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="OrderDto create">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Customer And Item ComboBox Add">
+      <change afterPath="$PROJECT_DIR$/Assignment.SPA/Model/cComboDTO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/itemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/itemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -127,14 +129,7 @@
       <workItem from="1646368900896" duration="598000" />
       <workItem from="1646374480423" duration="2755000" />
       <workItem from="1646453480059" duration="9645000" />
-      <workItem from="1646540811417" duration="2621000" />
-    </task>
-    <task id="LOCAL-00034" summary="Education div">
-      <created>1642534312972</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1642534312972</updated>
+      <workItem from="1646540811417" duration="15603000" />
     </task>
     <task id="LOCAL-00035" summary="Education div complete">
       <created>1642535238923</created>
@@ -472,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646476960069</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Customer And Item ComboBox Add">
+      <created>1646544765522</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1646544765522</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +493,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DashBoard Complete" />
     <MESSAGE value="boostrap Assignment Add" />
     <MESSAGE value="&quot;Enter&quot;next Text Feild to set" />
     <MESSAGE value="table data set to text field" />
@@ -516,7 +517,8 @@
     <MESSAGE value="Pages Link.js create" />
     <MESSAGE value="update spa" />
     <MESSAGE value="OrderDto create" />
-    <option name="LAST_COMMIT_MESSAGE" value="OrderDto create" />
+    <MESSAGE value="Customer And Item ComboBox Add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer And Item ComboBox Add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

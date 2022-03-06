@@ -213,7 +213,7 @@
     </div>
     <div class="row justify-content-around" style="height: max-content">
         <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
-            <h3 class="text-center bg-success p-2 text-light">Invoice</h3>
+            <h3 class="text-center bg-success p-2 text-light">Customer</h3>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="orderId">Order ID</label>
@@ -227,11 +227,8 @@
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="selectcustomerId">Customer ID</label>
+                    <input class="form-control" id="selectcustomerId" type="text">
 
-                    <select aria-label="Default select example" class="form-select border-dark"
-                            id="selectcustomerId">
-                        <option selected>-Select Customer-</option>
-                    </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="pocName">Customer Name</label>
@@ -242,6 +239,10 @@
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="pocaddress">Customer Address</label>
                     <input class="form-control border-dark" disabled id="pocaddress" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="pocContact">Customer Contact</label>
+                    <input class="form-control border-dark" disabled id="pocContact" type="text">
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="pocsalary">Customer Salary</label>
@@ -658,5 +659,6 @@
 <script src="Db/DB.js"></script>
 <script src="Model/customerDTO.js"></script>
 <script src="Model/itemDTO.js"></script>
+<script src="Model/cComboDTO.js"></script>
 </body>
 </html>

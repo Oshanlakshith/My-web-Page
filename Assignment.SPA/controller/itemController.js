@@ -300,6 +300,9 @@ function addItem() {
     itemDB.push(item);
 }
 
+// item Combo
+
+
 // Search Item
 
 function searchItem(itemCode) {

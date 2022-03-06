@@ -353,6 +353,8 @@ function addCustomer() {
     customerDB.push(customer);
 }
 
+
+
 // Search Customer
 
 function searchCustomer(searchId) {
@@ -405,6 +407,47 @@ function deleteCustomer() {
         }
     }
 }
+$("#selectcustomerId").keyup(function (event) {
+    searchCustId = $("#selectcustomerId").val();
+    if (regCusId.test(searchCustId)) {
+        $("#selectcustomerId").css('border', '2px solid green');
+        if (event.key == "Enter") {
+            var foundOrNot = false;
+            let foundCustomer = searchCustomer(searchCustId);
+            if (foundCustomer) {
+                $("#pocName").val(foundCustomer.getName());
+                $("#pocaddress").val(foundCustomer.getAddress());
+                $("#pocContact").val(foundCustomer.getContact());
+                $("#pocsalary").val(foundCustomer.getSalary());
+                foundOrNot = true;
+            }
+            if (foundOrNot == false) {
+                alert("Customer Not Found");
+                $("#pocName").val("");
+                $("#pocaddress").val("");
+                $("#pocContact").val("");
+                $("#pocsalary").val("");
+                $("#btnDeleteCustomer").prop('disabled', true);
+            }
+        }
+    } else {
+        $("#txtSearchCId").css('border', '2px solid red');
+        $("#searchCustomerIdError").text("Cust ID is a required field.Pattern : C00-001");
+
+    }
+});
+
+//ComboBox
+$("#btnRegisterCustomer").click(function () {
+    var select = document.getElementById("selectcustomerId"),
+        txtVal = document.getElementById("txtCustomerId").value,
+        newOption = document.createElement("OPTION"),
+        newOptionVal = document.createTextNode(txtVal);
+
+    newOption.appendChild(newOptionVal);
+    select.insertBefore(newOption, select.lastChild)
+});
+
 
 // Load all customers
 
