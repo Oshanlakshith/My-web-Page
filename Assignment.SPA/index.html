@@ -88,7 +88,6 @@
     <div class="container-fluid">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
             <h1 class="text-success "><i class="fas fa-users"></i> Customers</h1>
-
         </div>
         <div class="row justify-content-around" style="height: max-content">
             <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
@@ -228,11 +227,10 @@
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
                     <label class="fw-bold" for="selectcustomerId">Customer ID</label>
+
                     <select aria-label="Default select example" class="form-select border-dark"
                             id="selectcustomerId">
                         <option selected>-Select Customer-</option>
-
-
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
@@ -255,13 +253,10 @@
             <h3 class="text-center bg-success p-2 text-light">Items</h3>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label class="fw-bold" for="itemcode">Item Code</label>
-                    <select aria-label="Default select example" class="form-select border-dark" id="itemcode">
+                    <label class="fw-bold" for="selectItemcode">Item Code</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="selectItemcode">
                         <option selected>-Select Item-</option>
-                        <option value="1">I001</option>
-                        <option value="2">I002</option>
-                        <option value="3">I003</option>
-                        <option value="4">I004</option>
+
                     </select>
                 </div>
                 <div class="col-11 col-md-6 col-lg-4">
@@ -659,6 +654,7 @@
 <script src="controller/linkPages.js"></script>
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
+<script src="controller/PlaceOrderController.js"></script>
 <script src="Db/DB.js"></script>
 <script src="Model/customerDTO.js"></script>
 <script src="Model/itemDTO.js"></script>

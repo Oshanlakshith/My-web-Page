@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="update spa">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="OrderDto create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Model/customerDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Model/customerDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Model/orderDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Model/orderDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
     </list>
@@ -64,15 +64,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,14 +126,8 @@
       <workItem from="1646288005228" duration="1458000" />
       <workItem from="1646368900896" duration="598000" />
       <workItem from="1646374480423" duration="2755000" />
-      <workItem from="1646453480059" duration="6874000" />
-    </task>
-    <task id="LOCAL-00033" summary="Education red circle,red line,white circle,white line create complete">
-      <created>1642533560516</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1642533560516</updated>
+      <workItem from="1646453480059" duration="9645000" />
+      <workItem from="1646540811417" duration="2621000" />
     </task>
     <task id="LOCAL-00034" summary="Education div">
       <created>1642534312972</created>
@@ -473,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646377309884</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="OrderDto create">
+      <created>1646476960068</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1646476960069</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Item Table to data Add" />
     <MESSAGE value="DashBoard Complete" />
     <MESSAGE value="boostrap Assignment Add" />
     <MESSAGE value="&quot;Enter&quot;next Text Feild to set" />
@@ -517,7 +515,8 @@
     <MESSAGE value="CustomerController Create" />
     <MESSAGE value="Pages Link.js create" />
     <MESSAGE value="update spa" />
-    <option name="LAST_COMMIT_MESSAGE" value="update spa" />
+    <MESSAGE value="OrderDto create" />
+    <option name="LAST_COMMIT_MESSAGE" value="OrderDto create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

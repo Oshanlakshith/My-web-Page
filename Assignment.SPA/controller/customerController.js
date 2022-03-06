@@ -359,13 +359,13 @@ function searchCustomer(searchId) {
     for (var i = 0; i < customerDB.length; i++) {
         if (customerDB[i].getId() == searchId) {
             return customerDB[i];
-        }else {
+        } else {
             let res = confirm("Wrong Id?");
-                if (res){
-                    deleteCustomer();
-                    addCustomer();
-                    updateCustomer();
-                }
+            if (res) {
+                deleteCustomer();
+                addCustomer();
+                updateCustomer();
+            }
         }
     }
 }
@@ -376,7 +376,7 @@ function updateCustomer() {
     let updateCustId = $("#txtSearchCustomerId").val();
     let updateCustName = $("#txtCName").val();
     let updateCustAddress = $("#txtCaddress").val();
-    let updateContact=$("#txtCContact").val();
+    let updateContact = $("#txtCContact").val();
     let updateCustSalary = $("#txtCsalary").val();
 
     for (var i = 0; i < customerDB.length; i++) {
@@ -450,7 +450,7 @@ function searchCustomerByTable(searchId) {
         var id = customer.getId();
         var name = customer.getName();
         var address = customer.getAddress();
-        var contact=customer.getContact();
+        var contact = customer.getContact();
         var salary = customer.getSalary();
 
         $("#customerTable").empty();
@@ -508,7 +508,7 @@ function clearCustomerFields() {
     $("#txtCustomerId").css('border', '1px solid #ced4da');
     $("#txtCustomerName").css('border', '1px solid #ced4da');
     $("#txtCustomerAddress").css('border', '1px solid #ced4da');
-    $("#txtCustomerContact").css('border','1px solid #ced4da');
+    $("#txtCustomerContact").css('border', '1px solid #ced4da');
     $("#txtCustomerSalary").css('border', '1px solid #ced4da');
 
     $("#btnRegisterCustomer").prop('disabled', true);
@@ -554,7 +554,7 @@ function clearUpdateCustomerFields() {
     $("#txtSearchCustomerId").css('border', '1px solid #ced4da');
     $("#txtCName").css('border', '1px solid #ced4da');
     $("#txtCaddress").css('border', '1px solid #ced4da');
-    $("#txtCContact").css('border','1px solid  #ced4da')
+    $("#txtCContact").css('border', '1px solid  #ced4da')
     $("#txtCsalary").css('border', '1px solid #ced4da');
 }
 
