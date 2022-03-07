@@ -143,6 +143,12 @@ $('#txtSearchItemCode,#txtIName,#txtIUnitPrice,#txtIQty').on('keydown', function
     }
 });
 
+$('#selectItemId,#poiName,#poqtyOnHand,#poitemPrice').on('keydown',function (){
+    OrderIIdSearch();
+});
+$('#total,#poqtyOnHand,#poitemPrice').on('keydown',function (){
+    Total();
+});
 $("#txtSearchItemCode").keyup(function (event) {
     searchItemCode = $("#txtSearchItemCode").val();
     if (regItemCode.test(searchItemCode)) {
@@ -283,6 +289,7 @@ $("#txtSearchIcode").keyup(function (event) {
         $("#btnDeleteItem").prop('disabled', true);
     }
 });
+/*==================================================*/
 
 /*End Of Item Form Validations*/
 

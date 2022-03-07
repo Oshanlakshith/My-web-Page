@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Customer And Item ComboBox Add">
-      <change afterPath="$PROJECT_DIR$/Assignment.SPA/Model/cComboDTO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/customerController.js" afterDir="false" />
@@ -130,6 +129,8 @@
       <workItem from="1646374480423" duration="2755000" />
       <workItem from="1646453480059" duration="9645000" />
       <workItem from="1646540811417" duration="15603000" />
+      <workItem from="1646620633877" duration="847000" />
+      <workItem from="1646670935905" duration="7179000" />
     </task>
     <task id="LOCAL-00035" summary="Education div complete">
       <created>1642535238923</created>
