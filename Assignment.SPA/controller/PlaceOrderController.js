@@ -1,4 +1,4 @@
-function CusIdSearch(){
+function CusIdSearch() {
     $("#selectcustomerId").keyup(function (event) {
         searchCustId = $("#selectcustomerId").val();
         if (regCusId.test(searchCustId)) {
@@ -29,6 +29,7 @@ function CusIdSearch(){
         }
     });
 }
+
 function OrderIIdSearch() {
     $("#selectItemId").keyup(function (event) {
         searchItemCode = $("#selectItemId").val();
@@ -58,6 +59,7 @@ $("#btnAddCard").click(function () {
     $("#noOfItems").val(qty);
 });
 
+/*=========Total==============*/
 function Total() {
     $("#btnAddCard").click(function () {
         var qty = $("#poqtyOnHand").val();
@@ -71,6 +73,46 @@ function Balance() {
     var cash = $("#cash").val();
     $("#balance").val(cash - total);
 }
+
+$("#btnPlaceOrder").click(function () {
+    let res = confirm("Do you want to add this Order Table..?");
+    if (res) {
+        Balance();
+        AddOrderDetail();
+    }
+});
+
+function loadAllDeatail() {
+    for (var i in OrderDB) {
+        let tableRow = `<tr><td>${OrderDB[i].OrderId}</td><td>${OrderDB[i].ItemCode}</td><td>${OrderDB[i].OrderDate}</td><td>${OrderDB[i].Name}</td><td>${OrderDB[i].UPrice}</td><td>${OrderDB[i].Qty}</td><td>${OrderDB[i].NoItem}</td><td>${OrderDB[i].Total}</td></tr>`
+        $("#OrderTable").append(tableRow);
+    }
+}
+
+function AddOrderDetail() {
+    var OId = $("#orderId").val();
+    var ICode = $("#selectItemId").val();
+    var ODate = $("#orderDate").val();
+    var CName = $("#pocName").val();
+    var UPrice = $("#poitemPrice").val();
+    var qty = $("#poqtyOnHand").val();
+    var noItem = $("#noOfItems").val();
+    var total = $("#total").val();
+
+    var orderDetailOb = {
+        OrderId: OId,
+        ItemCode: ICode,
+        OrderDate: ODate,
+        Name: CName,
+        UPrice: UPrice,
+        Qty: qty,
+        NoItem: noItem,
+        Total: total,
+    };
+    OrderDB.push(orderDetailOb);
+    loadAllDeatail();
+}
+
 
 /*$("#btnAddItem").click(function () {
     var select = document.getElementById("selectItemcode"),

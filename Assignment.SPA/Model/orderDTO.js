@@ -1,14 +1,12 @@
-function OrderDTO(){
+function OrderDTO(orderId,code,orderDate,name,unitPrice,qty,noItem,total){
     var __OrderId=orderId;
-    var __OrderDate=orderDate;
-    var __id = id;
-    var __name = name;
-    var __address = address;
-    var __salary = salary;
     var __code = code;
-    var __Iname = Iname;
+    var __OrderDate=orderDate;
+    var __name = name;
     var __unitPrice = unitPrice;
     var __qty = qty;
+    var __noItem=noItem;
+    var __tot=total;
 
     this.getOId=function (){
         return __OrderId;
@@ -16,18 +14,18 @@ function OrderDTO(){
     this.setOId=function (orderId){
         __OrderId=orderId;
     }
+    this.getCode = function () {
+        return __code;
+    }
+
+    this.setCode = function (code) {
+        __code = code;
+    }
     this.getODate=function (){
         return __OrderDate;
     }
     this.setODate=function (orderDate){
         __OrderDate=orderDate;
-    }
-    this.getId = function () {
-        return __id;
-    }
-
-    this.setId = function (id) {
-        __id = id;
     }
 
     this.getName = function () {
@@ -37,38 +35,6 @@ function OrderDTO(){
     this.setName = function (name) {
         __name = name;
     }
-
-    this.getAddress = function () {
-        return __address;
-    }
-
-    this.setAddress = function (address) {
-        __address = address;
-    }
-
-    this.getSalary = function () {
-        return __salary;
-    }
-
-    this.setSalary = function (salary) {
-        __salary = salary;
-    }
-    this.getCode = function () {
-        return __code;
-    }
-
-    this.setCode = function (code) {
-        __code = code;
-    }
-
-    this.getIName = function () {
-        return __Iname;
-    }
-
-    this.setIName = function (name) {
-        __Iname = name;
-    }
-
     this.getUnitPrice = function () {
         return __unitPrice;
     }
@@ -77,11 +43,27 @@ function OrderDTO(){
         __unitPrice = unitPrice;
     }
 
+
     this.getQty = function () {
         return __qty;
     }
 
     this.setQty = function (qty) {
         __qty = qty;
+    }
+
+    this.getnoItem = function () {
+        return __noItem;
+    }
+
+    this.setnoItem = function (noItem) {
+        __noItem = noItem;
+    }
+    this.getTotal = function () {
+        return __tot;
+    }
+
+    this.setTotal = function (total) {
+        __tot = total;
     }
 }
