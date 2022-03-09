@@ -22,194 +22,219 @@
             <h1 class="navbar-brand text-success fw-bold">Pos System</h1>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" id="linkHome" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    <a class="nav-link active" aria-current="page" id="linkCustomer" href="#">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Items</a>
+                    <a class="nav-link active" aria-current="page" id="linkItem" href="#">Items</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Order</a>
+                    <a class="nav-link active" aria-current="page" id="linkOrder" href="#">Order</a>
                 </li>
+
             </ul>
         </div>
     </div>
 </nav>
 <section id="itemContent">
-    <section class="mb-2 shadow-lg">
-        <h1 class="text-light fw-bold text-center bg-danger">Item Form</h1>
-        <form>
-            <div class=" shadow-lg">
-                <label for="txtitemId" class="form-label fw-bold">Item code :</label>
-                <input type="text" class="form-control" id="txtitemId">
-                <p><small class="text-danger pl-1" id="lblitemid"></small></p>
-
+    <div class="container-fluid">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-boxes"></i> Items</h1>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item itemPageNavi itemHomeNavi">
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-success p-2 text-light">Search Item</h3>
+                <form id="searchItemForm">
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="txtSIcode"
+                               placeholder="Input Item Code"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchItem" type="button">Search
+                    </button>
+                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchItemField" type="reset">
+                        Clear
+                    </button>
+                </form>
             </div>
-            <div class="shadow-lg">
-                <label for="txtitemname" class="form-label fw-bold">Item Name :</label>
-                <input type="text" class="form-control" id="txtitemname">
-                <p><small class="text-danger pl-1" id="lblitemname"></small></p>
-
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#addItem"
+                        data-bs-toggle="modal">Add Item
+                </button>
+                <!--<button class="btn btn-warning position-relative m-2">View All Items</button>-->
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateItem"
+                        data-bs-toggle="modal">Update Item
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteItem"
+                        data-bs-toggle="modal">Delete Item
+                </button>
             </div>
-            <div class="shadow-lg">
-                <label for="txtitemQty" class="form-label fw-bold">Item Qty :</label>
-                <input type="text" class="form-control" id="txtitemQty">
-                <p><small class="text-danger pl-1" id="lblitemqty"></small></p>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Item Details</h3>
+                <div class="itemTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody id="itemTable">
 
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="shadow-lg mb-3">
-                <label for="txtitemPrice" class="form-label fw-bold">Item Price :</label>
-                <input type="text" class="form-control" id="txtitemPrice">
-                <p><small class="text-danger pl-1" id="lblitemprice"></small></p>
-
-            </div>
-
-            <button type="submit" class="btn btn-success fw-bold" id="btnSave">Save</button>
-            <button type="submit" class="btn btn-warning fw-bold">Update</button>
-            <button type="submit" class="btn btn-danger fw-bold">Delete</button>
-            <button type="submit" class="btn btn-info fw-bold">Search</button>
-        </form>
-    </section>
-    <section class="shadow-lg mb-2">
-        <table class="table table-light">
-            <thead class="bg-danger table table-striped">
-            <tr>
-                <th scope="col">Item Code</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Item Qty</th>
-                <th scope="col">Item Price</th>
-            </tr>
-            </thead>
-            <tbody id="itemTable">
-
-
-            </tbody>
-        </table>
-    </section>
+        </div>
+    </div>
 </section>
+<!-- Modal Add Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Add Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIcode">Item Code :</label>
+                        <input class="form-control" id="txtIcode"
+                               type="text">
+                        <p><small class="text-danger" id="itemCodeError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                        <input class="form-control" id="txtItemName"
+                               type="text">
+                        <p><small class="text-danger" id="itemNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtItemUnitPrice"
+                               type="number">
+                        <p><small class="text-danger" id="itemUnitPriceError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQty">Item Quantity :</label>
+                        <input class="form-control" id="txtItemQty"
+                               type="number">
+                        <p><small class="text-danger" id="itemQtyError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnAddItem" type="submit">Save</button>
+                <button class="btn btn-secondary" id="btnclearitemform" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Update Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchItemCode">Search Item Code :</label>
+                        <input class="form-control" id="txtSearchItemCode"
+                               type="text">
+                        <p><small class="text-danger" id="searchItemCodeError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIName">Item Name :</label>
+                        <input class="form-control" id="txtIName"
+                               type="text">
+                        <p><small class="text-danger" id="inameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtIUnitPrice"
+                               type="number">
+                        <p><small class="text-danger" id="iunitpriceError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIQty">Item Qty :</label>
+                        <input class="form-control" id="txtIQty"
+                               type="number">
+                        <p><small class="text-danger" id="iqtyError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnUpdateItem" type="submit">Update</button>
+                <button class="btn btn-secondary" id="btnClearUpdateItem" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchIcode">Search Item Code :</label>
+                        <input class="form-control" id="txtSearchIcode"
+                               type="text">
+                        <p><small class="text-danger" id="searchICodeError"></small></p>
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledName">Item Name :</label>
+                            <input class="form-control" id="txtdisabledName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledUnitPrice">Item Unit Price :</label>
+                            <input class="form-control" id="txtdisabledUnitPrice"
+                                   type="number">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdisabledQty">Item Quantity :</label>
+                            <input class="form-control" id="txtdisabledQty"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="btnDeleteItem" type="submit">Delete</button>
+                <button class="btn btn-secondary" id="btnClearDeleteItemFormFields" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="Db/Db.js"></script>
-<script>
-    $('#txtitemId,#txtitemname,#txtitemQty,#txtitemPrice').click(function () {
-        validation();
-    });
-    $("#txtitemId").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtitemname").focus();
-        }
-    });
-    $("#txtitemname").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtitemQty").focus();
-        }
-    });
-    $("#txtitemQty").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtitemPrice").focus();
-        }
-    });
 
-    $("#txtitemPrice").keydown(function (event) {
-        if (event.key == "Enter") {
-            saveItem();
-            loadTable();
-            textFeild();
-        }
-
-        function loadTable() {
-            for (var i of ItemDB) {
-                let row = `<tr><td>${i.id}</td><td>${i.iName}</td><td>${i.iQty}</td><td>${i.iPrice}</td></tr>`;
-                $("#itemTable").append(row);
-            }
-        }
-
-        function saveItem() {
-            let itemId = $("#txtitemId").val();
-            let itemName = $("#txtitemname").val();
-            let itemQty = $("#txtitemQty").val();
-            let itemPrice = $("#txtitemPrice").val();
-
-            var itemOb = {
-                id: itemId,
-                iName: itemName,
-                iQty: itemQty,
-                iPrice: itemPrice
-            };
-            ItemDB.push(itemOb);
-        }
-
-        function textFeild() {
-            $("#itemTable>tr").click(function () {
-                let itemId = $(this).children(":eq(0)").text();
-                let itemName = $(this).children(":eq(1)").text();
-                let itemQty = $(this).children(":eq(2)").text();
-                let itemPrice = $(this).children(":eq(3)").text();
-
-                console.log(itemId, itemName, itemQty, itemPrice)
-                $("#txtitemId").val(itemId);
-                $("#txtitemname").val(itemName);
-                $("#txtitemQty").val(itemQty);
-                $("#txtitemPrice").val(itemPrice);
-            });
-        }
-    });
-
-
-    function validation() {
-        var regExitemId = /^(I00-)[0-9]{3,4}$/;
-        var regExitemName = /^[A-z]{3,20}$/;
-        var regExitemqty = /^[0-9]{1,5}$/;
-        var regExitemprice = /^[0-9]{1,5}$/;
-
-        $("#txtitemId").keydown(function () {
-            let input = $("#txtitemId").val();
-            if (regExitemId.test(input)) {
-                $("#txtitemId").css('border', '2px solid green');
-                $("#lblitemid").text("");
-            } else {
-                $("#txtitemId").css('border', '2px solid red');
-                $("#lblitemid").text("Cus ID is a required field : Pattern I00-000")
-            }
-        });
-
-
-        $("#txtitemname").keydown(function () {
-            let input = $("#txtitemname").val();
-            if (regExitemName.test(input)) {
-                $("#txtitemname").css('border', '2px solid green');
-                $("#lblitemname").text("")
-            } else {
-                $("#txtitemname").css('border', '2px solid red');
-                $("#lblitemname").text("Item Name is a required field : Mimimum 5, Max 20, Spaces Allowed")
-            }
-        });
-
-        $("#txtitemQty").keydown(function () {
-            let input = $("#txtitemQty").val();
-            if (regExitemqty.test(input)) {
-                $("#txtitemQty").css('border', '2px solid green');
-                $("#lblitemqty").text("");
-            } else {
-                $("#txtitemQty").css('border', '2px solid red');
-                $("#lblitemqty").text("Item Qty is a required field : Mimimum 1, Max 4, Spaces Allowed")
-            }
-        });
-
-        $("#txtitemPrice").keydown(function () {
-            let input = $("#txtitemPrice").val();
-            if (regExitemprice.test(input)) {
-                $("#txtitemPrice").css('border', '2px solid green');
-                $("#lblitemprice").text("");
-            } else {
-                $("#txtitemPrice").css('border', '2px solid red');
-                $("#lblitemprice").text("Item Price is a required field : Mimimum 2, Max 4, Spaces Allowed");
-            }
-        });
-    }
-</script>
 </body>
 </html>

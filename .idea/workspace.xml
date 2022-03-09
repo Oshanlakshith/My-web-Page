@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place Order Form calculate">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place Order Form Complete and Pos System Complete!!!&#10;End!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Db/DB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/Model/orderDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/Model/orderDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/controller/PlaceOrderController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,21 +65,6 @@
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,14 +119,9 @@
       <workItem from="1646540811417" duration="15603000" />
       <workItem from="1646620633877" duration="847000" />
       <workItem from="1646670935905" duration="8895000" />
-      <workItem from="1646721026448" duration="7406000" />
-    </task>
-    <task id="LOCAL-00036" summary="Education section complete">
-      <created>1642536167109</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1642536167109</updated>
+      <workItem from="1646721026448" duration="9432000" />
+      <workItem from="1646805795534" duration="3000" />
+      <workItem from="1646845741285" duration="1307000" />
     </task>
     <task id="LOCAL-00037" summary="BootstrapPOS directory">
       <created>1642739729992</created>
@@ -478,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646678457435</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Place Order Form Complete and Pos System Complete!!!&#10;End!">
+      <created>1646728756328</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1646728756328</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +485,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;Enter&quot;next Text Feild to set" />
     <MESSAGE value="table data set to text field" />
     <MESSAGE value="pointer java Script task" />
     <MESSAGE value="color update" />
@@ -522,7 +509,8 @@
     <MESSAGE value="OrderDto create" />
     <MESSAGE value="Customer And Item ComboBox Add" />
     <MESSAGE value="Place Order Form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Place Order Form" />
+    <MESSAGE value="Place Order Form Complete and Pos System Complete!!!&#10;End!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Place Order Form Complete and Pos System Complete!!!&#10;End!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,11 +519,6 @@
           <url>file://$PROJECT_DIR$/javaScript/index2.html</url>
           <line>76</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html</url>
-          <line>161</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

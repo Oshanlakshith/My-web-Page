@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Order</title>
 </head>
 <body>
@@ -17,151 +22,153 @@
             <h1 class="navbar-brand text-success fw-bold">Pos System</h1>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" id="linkHome" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    <a class="nav-link active" aria-current="page" id="linkCustomer" href="#">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Items</a>
+                    <a class="nav-link active" aria-current="page" id="linkItem" href="#">Items</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Order</a>
+                    <a class="nav-link active" aria-current="page" id="linkOrder" href="#">Order</a>
                 </li>
+
             </ul>
         </div>
     </div>
 </nav>
-<h1 class="text-light fw-bold text-center bg-danger">Place Order Form</h1>
-<section class="container-fluid mt-2">
-    <section class="row">
-        <div class="col-4 mb-2">
-            <form>
-                <fieldset>
-                    <legend class="text-center bg-success mb-3 text-light fw-bold">Invoice Details</legend>
-                    <div class="shadow-lg">
-                        <label for="OrderId" class="form-label fw-bold">Order Id :</label>
-                        <input type="text" class="form-control shadow-lg" id="OrderId">
+    <div class="container-fluid flex-grow-1 flex-column" id="placeOrderPage"
+         style="background-color: #c8c8c8; display: none">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-cart-plus"></i> Place Order</h1>
 
-                        <div class="mb-3 fw-bold">
-                            <label for="combo" class="form-label">Customer :</label>
-                            <select id="combo" class="form-select shadow-lg">
-                            </select>
-                        </div>
-                        <div class="shadow-lg-">
-                            <label for="Name" class="form-label fw-bold"> Name :</label>
-                            <input type="text" class="form-control shadow-lg" id="Name">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="Address" class="form-label fw-bold">Address :</label>
-                            <input type="text" class="form-control shadow-lg" id="Address">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="Date" class="form-label fw-bold">Date :</label>
-                            <input type="date" class="form-control shadow-lg" id="Date">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="Salery" class="form-label fw-bold">Salery :</label>
-                            <input type="text" class="form-control shadow-lg" id="Salery">
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
         </div>
-        <div class="col-4">
-            <form>
-                <fieldset>
-                    <legend class="text-center bg-success mb-3 text-light fw-bold">Item Select</legend>
-                    <div class="shadow-lg">
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+                <h3 class="text-center bg-success p-2 text-light">Customer</h3>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="orderId">Order ID</label>
+                        <input class="form-control border-dark" id="orderId" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="orderDate">Order Date</label>
+                        <input class="form-control border-dark" id="orderDate" type="date">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="selectcustomerId">Customer ID</label>
+                        <input class="form-control" id="selectcustomerId" type="text">
 
-                        <div class="mb-2 fw-bold">
-                            <label for="item" class="form-label">Item :</label>
-                            <select id="item" class="form-select shadow-lg">
-                            </select>
-                            <label for="icode" class="form-label fw-bold">Item Code :</label>
-                            <input type="text" class="form-control shadow-lg" id="icode">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="IName" class="form-label fw-bold "> Item Name :</label>
-                            <input type="text" class="form-control shadow-lg" id="IName">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="IPrice" class="form-label fw-bold">Price :</label>
-                            <input type="text" class="form-control shadow-lg" id="IPrice">
-                        </div>
-                        <div class="shadow-lg">
-                            <label for="IQonHand" class="form-label fw-bold">QtyOnHand :</label>
-                            <input type="date" class="form-control shadow-lg" id="IQonHand">
-                        </div>
-                        <div class="shadow-lg mb-1">
-                            <label for="Qty" class="form-label fw-bold">Order Quantity :</label>
-                            <input type="text" class="form-control shadow-lg" id="Qty">
-                        </div>
                     </div>
-                    <div class="">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-danger" type="button">Add Item</button>
-                        </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocName">Customer Name</label>
+                        <input class="form-control border-dark" disabled id="pocName" type="text">
                     </div>
-                </fieldset>
-            </form>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocaddress">Customer Address</label>
+                        <input class="form-control border-dark" disabled id="pocaddress" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocContact">Customer Contact</label>
+                        <input class="form-control border-dark" disabled id="pocContact" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocsalary">Customer Salary</label>
+                        <input class="form-control border-dark" disabled id="pocsalary" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-md-5 col-lg-5 p-3 mt-3" style="background-color: white">
+                <h3 class="text-center bg-success p-2 text-light">Items</h3>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="selectItemId">Item ID</label>
+                        <input class="form-control" id="selectItemId" type="text">
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-4">
+                        <label class="fw-bold" for="poiName">Item Name</label>
+                        <input class="form-control border-dark" disabled id="poiName" type="text">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="poitemPrice">Unit Price</label>
+                        <input class="form-control border-dark" disabled id="poitemPrice" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="poqtyOnHand">Qty On Hand</label>
+                        <input class="form-control border-dark" id="poqtyOnHand" type="text">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <button class="btn btn-primary rounded-2" type="submit" id="btnAddCard">Add To Cart</button>
+                        <button class="btn btn-secondary rounded-2" type="submit">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-10 col-lg-3 p-3 mt-3 bg-light mt-1">
+                <h3 class="text-center bg-success p-2 text-light">Payment Details</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="total">Total (Rs.)</label>
+                        <input class="form-control border-dark" disabled id="total" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="noOfItems">No Of Items</label>
+                        <input class="form-control border-dark" disabled id="noOfItems" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="cash">Cash (Rs.)</label>
+                        <input class="form-control border-dark" id="cash" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="balance">Balance (Rs.)</label>
+                        <input class="form-control border-dark" disabled id="balance" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary rounded-2 mt-2" type="submit" id="btnPlaceOrder">Place Order</button>
+                        <button class="btn btn-secondary rounded-2 mt-2" type="submit">Cancel</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <form>
-                <fieldset>
-                    <legend class="text-primary">Total :</legend>
-                    <legend class="text-danger">SubTotal :</legend>
-                    <div class="shadow-lg mb-2">
-                        <label for="cash" class="form-label">Cash</label>
-                        <input type="text" id="cash" class="form-control" placeholder="Disabled input">
-                    </div>
-                    <div class="shadow-lg mb-2">
-                        <label for="discount" class="form-label">Discount</label>
-                        <input type="text" id="discount" class="form-control" placeholder="Disabled input">
-                    </div>
-                    <div class="shadow-lg mb-2">
-                        <label for="Balence" class="form-label">Balence</label>
-                        <input type="text" id="Balence" class="form-control" placeholder="Disabled input">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-            </form>
+        <div class="row mt-1 justify-content-around">
+            <div class="col-10 p-3 mt-3">
+                <h3 class="text-center bg-success p-2 text-light">Order Details</h3>
+                <div class="cartTbleDiv bg-light">
+                    <table class="table table-hover table-bordered">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Order Id</th>
+                            <th>Item Code</th>
+                            <th>Order Date</th>
+                            <th>Name</th>
+                            <th>Unit Price</th>
+                            <th>Qty On Hand</th>
+                            <th>Buy Qty</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody id="OrderTable">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    </section>
-</section>
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Item Code</th>
-        <th scope="col">Item Name</th>
-        <th scope="col">Price</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Total</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>I001</td>
-        <td>Ice</td>
-        <td>Rs.1000</td>
-        <td>50</td>
-        <td>50000</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <!--      <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>-->
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <!--   <td colspan="3">Larry the Bird</td>
-           <td>@twitter</td>-->
-    </tr>
-    </tbody>
-</table>
-<script src="assets/js/bootstrap.min.js"></script>
+    </div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 </body>
 </html>

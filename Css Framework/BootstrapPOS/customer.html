@@ -33,205 +33,217 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" id="linkOrder" href="#">Order</a>
                 </li>
+
             </ul>
         </div>
     </div>
 </nav>
-<section id="customerContent">
-    <section class="mb-2 shadow-lg">
-        <h1 class="text-light fw-bold text-center bg-success">Customer Form</h1>
-        <form>
-            <div class=" shadow-lg">
-                <label for="txtCustomerId" class="form-label fw-bold">Customer Id :</label>
-                <input type="text" class="form-control" id="txtCustomerId">
-                <p><small class="text-danger pl-1" id="lblcusid"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerName" class="form-label fw-bold">Cutomer Name :</label>
-                <input type="text" class="form-control" id="txtCustomerName">
-                <p><small class="text-danger pl-1" id="lblcusname"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerAddress" class="form-label fw-bold">Customer Address :</label>
-                <input type="text" class="form-control" id="txtCustomerAddress">
-                <p><small class="text-danger pl-1" id="lblcusaddress"></small></p>
-            </div>
-            <div class="shadow-lg">
-                <label for="txtCustomerContact" class="form-label fw-bold">Customer Contact :</label>
-                <input type="text" class="form-control" id="txtCustomerContact">
-                <p><small class="text-danger pl-1" id="lblcuscontact"></small></p>
-            </div>
-            <div class="mb-3 shadow-lg">
-                <label for="txtCustomerSalary" class="form-label fw-bold">Customer Salary :</label>
-                <input type="text" class="form-control" id="txtCustomerSalary">
-                <p><small class="text-danger pl-1" id="lblcussalery"></small></p>
-            </div>
+<!--Customer Register-->
 
-            <button type="submit" class="btn btn-success fw-bold" id="btnCustomerSave">Save</button>
-            <button type="submit" class="btn btn-warning fw-bold">Update</button>
-            <button type="submit" class="btn btn-danger fw-bold">Delete</button>
-            <button type="submit" class="btn btn-info fw-bold">Search</button>
-        </form>
-    </section>
-    <section class="shadow-lg">
-        <table class="table table-light">
-            <thead class="bg-success table table-striped text-white">
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Contact</th>
-                <th scope="col">Salery</th>
-            </tr>
-            </thead>
-            <tbody id="customerTable">
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="registerCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Add Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Customer ID :</label>
+                        <input class="form-control" id="txtCustomerId"
+                               type="text">
+                        <p><small class="text-danger" id="customerIdError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Customer Name :</label>
+                        <input class="form-control" id="txtCustomerName"
+                               type="text">
+                        <p><small class="text-danger" id="customerNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Address :</label>
+                        <input class="form-control" id="txtCustomerAddress"
+                               type="text">
+                        <p><small class="text-danger" id="customerAddressError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Contact :</label>
+                        <input class="form-control" id="txtCustomerContact" type="text">
+                        <p><small class="text-danger" id="customerContactError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerSalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCustomerSalary"
+                               type="number">
+                        <p><small class="text-danger" id="customerSalaryError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnRegisterCustomer" type="submit">Save</button>
+                <button class="btn btn-secondary" id="btnclearcustomerform" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <section id="customerContent">
+        <div class="container-fluid">
+            <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+                <h1 class="text-success "><i class="fas fa-users"></i> Customers</h1>
+            </div>
+            <div class="row justify-content-around" style="height: max-content">
+                <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                    <h3 class="text-center bg-primary p-2 text-light">Search Customer</h3>
+                    <form id="searchCustomerForm">
+                        <div class="mb-3 ms-3 me-3">
+                            <input class="form-control" id="txtSCustId"
+                                   placeholder="Input Customer ID"
+                                   type="text">
+                        </div>
+                        <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchCustId" type="button">
+                            Search
+                        </button>
+                        <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchField" type="reset">
+                            Clear
+                        </button>
+                    </form>
+                </div>
+                <div class="col-10 col-md-5 col-lg-5 mt-2">
+                    <button class="btn btn-info position-relative m-2" data-bs-target="#registerCustomer"
+                            data-bs-toggle="modal">Add Customer
+                    </button>
+                    <!--<button class="btn btn-warning position-relative m-2">View All Customers</button>-->
+                    <button class="btn btn-primary position-relative m-2" data-bs-target="#updateCustomer"
+                            data-bs-toggle="modal">Update Customer
+                    </button>
+                    <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
+                            data-bs-toggle="modal">Delete Customer
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+                <div class="col-10">
+                    <h3 class="text-center bg-success p-2 text-light mb-0">Customer Details</h3>
+                    <div class="customeTableDiv">
+                        <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                            <thead class="bg-info">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Contact</th>
+                                <th>Salary</th>
+                            </tr>
+                            </thead>
+                            <tbody id="customerTable">
 
-            </tbody>
-        </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-</section>
-<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchCustomerId">Search Customer ID :</label>
+                        <input class="form-control" id="txtSearchCustomerId"
+                               type="text">
+                        <p><small class="text-danger" id="searchCustIdError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCName">Customer Name :</label>
+                        <input class="form-control" id="txtCName"
+                               type="text">
+                        <p><small class="text-danger" id="cNameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCaddress">Customer Address :</label>
+                        <input class="form-control" id="txtCaddress"
+                               type="text">
+                        <p><small class="text-danger" id="cAddressError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCContact">Customer Contact :</label>
+                        <input class="form-control" id="txtCContact"
+                               type="text">
+                        <p><small class="text-danger" id="contactError"></small></p>
+                    </div>
+
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCsalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCsalary"
+                               type="number">
+                        <p><small class="text-danger" id="cSalaryError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnUpdateCust" type="submit">Update</button>
+                <button class="btn btn-secondary" id="btnClearUpdateCustomer" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchCId">Search Customer ID :</label>
+                        <input class="form-control" id="txtSearchCId"
+                               type="text">
+                        <p><small class="text-danger" id="searchCustomerIdError"></small></p>
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcName">Customer Name :</label>
+                            <input class="form-control" id="txtdcName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcAddress">Customer Address :</label>
+                            <input class="form-control" id="txtdcAddress"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdContact">Cart</label>
+                            <input class="form-control" id="txtdContact"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="txtdcSalary">Customer Salary :</label>
+                            <input class="form-control" id="txtdcSalary"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="btnDeleteCustomer" type="submit">Delete</button>
+                <button class="btn btn-secondary" id="btnClearDeleteCustomerFields" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="Db/Db.js"></script>
-<script>
-    $('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact,#txtCustomerSalary').click(function () {
-        validation();
-    });
-    $("#txtCustomerId").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerName").focus();
-        }
-    });
-    $("#txtCustomerName").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerAddress").focus();
-        }
-    });
-    $("#txtCustomerAddress").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerContact").focus();
-        }
-    });
-    $("#txtCustomerContact").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCustomerSalary").focus();
-        }
-    });
-    $("#txtCustomerSalary").keydown(function (event) {
-        if (event.key == "Enter") {
-            saveCustomer();
-            loadTable();
-            textFildAdd();
-        }
-
-        function loadTable() {
-            $("#customerTable").empty();
-            for (var i of CustomerDB) {
-                let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.contact}</td><td>${i.salery}</td></tr>`;
-                $("#customerTable").append(row);
-            }
-        }
-
-        function saveCustomer() {
-            let cusId = $("#txtCustomerId").val();
-            let cusname = $("#txtCustomerName").val();
-            let cusaddress = $("#txtCustomerAddress").val();
-            let cuscontact = $("#txtCustomerContact").val();
-            let cussalery = $("#txtCustomerSalary").val();
-
-            var customerOb = {
-                id: cusId,
-                name: cusname,
-                address: cusaddress,
-                contact: cuscontact,
-                salery: cussalery
-            };
-            CustomerDB.push(customerOb);
-        }
-
-        function textFildAdd() {
-            $("#customerTable>tr").click(function () {
-                let customerId = $(this).children(":eq(0)").text();
-                let customerName = $(this).children(":eq(1)").text();
-                let customerAddress = $(this).children(":eq(2)").text();
-                let customerContact = $(this).children(":eq(3)").text();
-                let customerSalary = $(this).children(":eq(4)").text();
-
-                console.log(customerId, customerName, customerAddress, customerContact, customerSalary)
-
-                $("#txtCustomerId").val(customerId);
-                $("#txtCustomerName").val(customerName);
-                $("#txtCustomerAddress").val(customerAddress);
-                $("#txtCustomerContact").val(customerContact);
-                $("#txtCustomerSalary").val(customerSalary);
-            });
-        }
-
-    });
-    $("#txtCustomerId").keydown(function (event) {
-        console.log(event.key)
-    });
-
-    function validation() {
-        var regExCId = /^(C00-)[0-9]{3,4}$/;
-
-        $("#txtCustomerId").keyup(function () {
-
-            let input = $("#txtCustomerId").val();
-            if (regExCId.test(input)) {
-                $("#txtCustomerId").css('border', '2px solid green');
-                $("#lblcusid").text("");
-            } else {
-                $("#txtCustomerId").css('border', '2px solid red');
-                $("#lblcusid").text("Cus ID is a required field : Pattern C00-000");
-
-            }
-        });
-
-        var regExCName = /^[A-z]{3,15}$/;
-        $("#txtCustomerName").keydown(function () {
-            let input = $("#txtCustomerName").val();
-            if (regExCName.test(input)) {
-                $("#txtCustomerName").css('border', '2px solid green');
-                $("#lblcusname").text("");
-            } else {
-                $("#txtCustomerName").css('border', '2px solid red');
-                $("#lblcusname").text("Cus Name is a required field : Mimimum 5, Max 20, Spaces Allowed")
-            }
-        });
-        var regExAddress = /^[0-9]{1,4}?[,]? [A-z]{1,20}$/;
-        $("#txtCustomerAddress").keydown(function () {
-            let input = $("#txtCustomerAddress").val();
-            if (regExAddress.test(input)) {
-                $("#txtCustomerAddress").css('border', '2px solid green');
-                $("#lblcusaddress").text("");
-            } else {
-                $("#txtCustomerAddress").css('border', '2px solid red');
-                $("#lblcusaddress").text("Cus Address is a required field : Mimum 7");
-            }
-        });
-        var regExContact = /^[0-9]{3}[-]?[0-9]{6,8}$/;
-        $("#txtCustomerContact").keydown(function () {
-            let input = $("#txtCustomerContact").val();
-            if (regExContact.test(input)) {
-                $("#txtCustomerContact").css('border', '2px solid green');
-                $("#lblcuscontact").text("");
-            } else {
-                $("#txtCustomerContact").css('border', '2px solid red');
-                $("#lblcuscontact").text("Cus Contact is a required field : Mimum 10");
-            }
-        });
-        var regExSalary = /^[0-9]{4,6}$/;
-        $("#txtCustomerSalary").keydown(function () {
-            let input = $("#txtCustomerSalary").val();
-            if (regExSalary.test(input)) {
-                $("#txtCustomerSalary").css('border', '2px solid green');
-                $("#lblcussalery").text("");
-            } else {
-                $("#txtCustomerSalary").css('border', '2px solid red');
-                $("#lblcussalery").text("Cus salery is a required field :minimum 3");
-            }
-        });
-    }
-</script>
 </body>
 </html>
