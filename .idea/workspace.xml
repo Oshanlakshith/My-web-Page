@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/assets/images/crop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/assets/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/assets/images/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaScript/assets/images/pos.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +47,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment.SPA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javaScript/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\javaScript\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Db" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Model" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\controller" />
-      <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page" />
@@ -60,6 +65,19 @@
       <recent name="E:\work HTML\My project\My-web-Page\assets" />
       <recent name="E:\work HTML\My project\My-web-Page\Css Framework\BootstrapPOS" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,14 +135,7 @@
       <workItem from="1646670935905" duration="8895000" />
       <workItem from="1646721026448" duration="9432000" />
       <workItem from="1646805795534" duration="3000" />
-      <workItem from="1646845741285" duration="1675000" />
-    </task>
-    <task id="LOCAL-00038" summary="navbar create">
-      <created>1642742003519</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1642742003519</updated>
+      <workItem from="1646845741285" duration="5032000" />
     </task>
     <task id="LOCAL-00039" summary="customer form complete">
       <created>1642747461199</created>
@@ -462,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646847249177</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Update">
+      <created>1646847717830</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1646847717830</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
