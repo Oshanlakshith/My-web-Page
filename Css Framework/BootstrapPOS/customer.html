@@ -39,7 +39,64 @@
     </div>
 </nav>
 <!--Customer Register-->
+<section id="customerContent">
+    <div class="container-fluid">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1 class="text-success "><i class="fas fa-users"></i> Customers</h1>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-primary p-2 text-light">Search Customer</h3>
+                <form id="searchCustomerForm">
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="txtSCustId"
+                               placeholder="Input Customer ID"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchCustId" type="button">
+                        Search
+                    </button>
+                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchField" type="reset">
+                        Clear
+                    </button>
+                </form>
+            </div>
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#registerCustomer"
+                        data-bs-toggle="modal">Add Customer
+                </button>
+                <!--<button class="btn btn-warning position-relative m-2">View All Customers</button>-->
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateCustomer"
+                        data-bs-toggle="modal">Update Customer
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
+                        data-bs-toggle="modal">Delete Customer
+                </button>
+            </div>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Customer Details</h3>
+                <div class="customeTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Contact</th>
+                            <th>Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customerTable">
 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="registerCustomer" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -87,64 +144,7 @@
         </div>
     </div>
 </div>
-    <section id="customerContent">
-        <div class="container-fluid">
-            <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
-                <h1 class="text-success "><i class="fas fa-users"></i> Customers</h1>
-            </div>
-            <div class="row justify-content-around" style="height: max-content">
-                <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
-                    <h3 class="text-center bg-primary p-2 text-light">Search Customer</h3>
-                    <form id="searchCustomerForm">
-                        <div class="mb-3 ms-3 me-3">
-                            <input class="form-control" id="txtSCustId"
-                                   placeholder="Input Customer ID"
-                                   type="text">
-                        </div>
-                        <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" id="btnSearchCustId" type="button">
-                            Search
-                        </button>
-                        <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" id="btnClearSearchField" type="reset">
-                            Clear
-                        </button>
-                    </form>
-                </div>
-                <div class="col-10 col-md-5 col-lg-5 mt-2">
-                    <button class="btn btn-info position-relative m-2" data-bs-target="#registerCustomer"
-                            data-bs-toggle="modal">Add Customer
-                    </button>
-                    <!--<button class="btn btn-warning position-relative m-2">View All Customers</button>-->
-                    <button class="btn btn-primary position-relative m-2" data-bs-target="#updateCustomer"
-                            data-bs-toggle="modal">Update Customer
-                    </button>
-                    <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
-                            data-bs-toggle="modal">Delete Customer
-                    </button>
-                </div>
-            </div>
-            <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
-                <div class="col-10">
-                    <h3 class="text-center bg-success p-2 text-light mb-0">Customer Details</h3>
-                    <div class="customeTableDiv">
-                        <table class="table bg-light table-bordered w-100 h-100 table-hover">
-                            <thead class="bg-info">
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact</th>
-                                <th>Salary</th>
-                            </tr>
-                            </thead>
-                            <tbody id="customerTable">
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">

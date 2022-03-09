@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Place Order Form Complete and Pos System Complete!!!&#10;End!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/index.html" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Update">
       <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/placeOrder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,14 +117,7 @@
       <workItem from="1646670935905" duration="8895000" />
       <workItem from="1646721026448" duration="9432000" />
       <workItem from="1646805795534" duration="3000" />
-      <workItem from="1646845741285" duration="1307000" />
-    </task>
-    <task id="LOCAL-00037" summary="BootstrapPOS directory">
-      <created>1642739729992</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1642739729992</updated>
+      <workItem from="1646845741285" duration="1675000" />
     </task>
     <task id="LOCAL-00038" summary="navbar create">
       <created>1642742003519</created>
@@ -466,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646728756328</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Update">
+      <created>1646847249172</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1646847249177</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +481,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="table data set to text field" />
     <MESSAGE value="pointer java Script task" />
     <MESSAGE value="color update" />
     <MESSAGE value="font update" />
@@ -510,7 +505,8 @@
     <MESSAGE value="Customer And Item ComboBox Add" />
     <MESSAGE value="Place Order Form" />
     <MESSAGE value="Place Order Form Complete and Pos System Complete!!!&#10;End!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Place Order Form Complete and Pos System Complete!!!&#10;End!" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
