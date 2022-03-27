@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+    $("#loader").fadeOut(1000);
+});
 let text = $("#name").text();
 var count=0;
 

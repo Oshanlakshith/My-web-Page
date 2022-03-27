@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Update Web Page">
-      <change afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-1/assets/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/loading-5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Bottom Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,17 +43,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AAD/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\AAD\images" />
+      <recent name="E:\work HTML\My project\My-web-Page\AAD" />
       <recent name="E:\work HTML\My project\My-web-Page\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\javaScript\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Db" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page" />
@@ -140,14 +137,7 @@
       <workItem from="1647052410017" duration="594000" />
       <workItem from="1647169680539" duration="3476000" />
       <workItem from="1648279408828" duration="327000" />
-      <workItem from="1648351992556" duration="1671000" />
-    </task>
-    <task id="LOCAL-00041" summary="customer form update text box">
-      <created>1642757000193</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1642757000193</updated>
+      <workItem from="1648351992556" duration="6997000" />
     </task>
     <task id="LOCAL-00042" summary="Item Form Complete">
       <created>1642760605383</created>
@@ -485,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646852020018</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Bottom Update">
+      <created>1648353726217</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1648353726217</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +501,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="color update" />
     <MESSAGE value="font update" />
     <MESSAGE value="README Update" />
     <MESSAGE value="Update readme" />
@@ -529,7 +525,8 @@
     <MESSAGE value="Place Order Form Complete and Pos System Complete!!!&#10;End!" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update Web Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Web Page" />
+    <MESSAGE value="Bottom Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bottom Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
