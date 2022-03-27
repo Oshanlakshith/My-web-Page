@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Bottom Update">
+    <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="web page bottom and AAd loader create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
@@ -137,14 +137,7 @@
       <workItem from="1647052410017" duration="594000" />
       <workItem from="1647169680539" duration="3476000" />
       <workItem from="1648279408828" duration="327000" />
-      <workItem from="1648351992556" duration="6997000" />
-    </task>
-    <task id="LOCAL-00042" summary="Item Form Complete">
-      <created>1642760605383</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1642760605383</updated>
+      <workItem from="1648351992556" duration="8240000" />
     </task>
     <task id="LOCAL-00043" summary="Place order form">
       <created>1642823546856</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648353726217</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="web page bottom and AAd loader create">
+      <created>1648359637940</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1648359637940</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +501,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="font update" />
     <MESSAGE value="README Update" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="Update JS" />
@@ -526,7 +525,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Update Web Page" />
     <MESSAGE value="Bottom Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bottom Update" />
+    <MESSAGE value="web page bottom and AAd loader create" />
+    <option name="LAST_COMMIT_MESSAGE" value="web page bottom and AAd loader create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
