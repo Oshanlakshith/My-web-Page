@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1936075e-77ea-4783-bcdf-46eb9aead5a3" name="Default Changelist" comment="Update Web Page">
-      <change afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css Assignments/css Assignment-1/assets/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/loading-5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/04_SPA/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.SPA/assets/Bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Css Framework/BootstrapPOS/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2page.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +46,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/javaScript/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work HTML\My project\My-web-Page\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\javaScript\assets\images" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Db" />
       <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\Model" />
-      <recent name="E:\work HTML\My project\My-web-Page\Assignment.SPA\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work HTML\My project\My-web-Page" />
@@ -151,14 +134,13 @@
       <workItem from="1646670935905" duration="8895000" />
       <workItem from="1646721026448" duration="9432000" />
       <workItem from="1646805795534" duration="3000" />
-      <workItem from="1646845741285" duration="6023000" />
-    </task>
-    <task id="LOCAL-00040" summary="customer form complete">
-      <created>1642756312821</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1642756312821</updated>
+      <workItem from="1646845741285" duration="6837000" />
+      <workItem from="1646880743824" duration="2970000" />
+      <workItem from="1646966758462" duration="5946000" />
+      <workItem from="1647052410017" duration="594000" />
+      <workItem from="1647169680539" duration="3476000" />
+      <workItem from="1648279408828" duration="327000" />
+      <workItem from="1648351992556" duration="1671000" />
     </task>
     <task id="LOCAL-00041" summary="customer form update text box">
       <created>1642757000193</created>
@@ -496,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646850879597</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Update Web Page">
+      <created>1646852020018</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1646852020018</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
